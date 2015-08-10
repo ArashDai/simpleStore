@@ -1,0 +1,19 @@
+{
+  "name": "simplestore",
+  "version": "1.0.0",
+  "description": "a simple store framework that can be reused repeatedly",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArashDai/simpleStore.git"
+  },
+  "author": "Arash Dai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArashDai/simpleStore/issues"
+  },
+  "homepage": "https://github.com/ArashDai/simpleStore#readme"
+}
