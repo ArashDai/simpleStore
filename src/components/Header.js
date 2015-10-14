@@ -2,7 +2,7 @@ var React = require('react');
 var TopBox = require('./TopBox');
 var NavBar = require('./NavBar');
 
-var Header = react.createClass({
+var Header = React.createClass({
   render: function(){
     return (
 

@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDom = require('react-dom');
 var Header = require('./components/Header');
 var MainBody = require('./components/MainBody');
 var Footer = require('./components/Footer');
@@ -7,8 +8,9 @@ var Footer = require('./components/Footer');
 var App = React.createClass({
   render:function(){
     return(
+
       <div>
-       
+      
         <div>
           <Header/>
         </div>       
@@ -27,5 +29,4 @@ var App = React.createClass({
 });
 
 
-
-React.render(<App/>, document.getElementById('main'));
+ReactDom.render(<App/>, document.getElementById('main'));

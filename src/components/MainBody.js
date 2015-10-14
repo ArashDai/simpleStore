@@ -3,7 +3,6 @@ var Intro = require('./Intro');
 var Cakes = require('./Cakes');
 var Baked = require('./Baked');
 var Food = require('./Food');
-var Info = require('./Info');
 
 
 var MainBody = React.createClass({

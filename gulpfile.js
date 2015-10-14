@@ -8,6 +8,11 @@ var reactify = require('reactify');
 var watchify = require('watchify');
 var nodemon = require('gulp-nodemon');
 
+gulp.task('styles',function(){
+  return gulp.src('./src/styles.css')
+          .pipe(concat('all.css'))
+          .pipe(gulp.dest('./src/'))
+});
 
 gulp.task('watch',function(){
   var start = Date.now();
@@ -28,6 +33,24 @@ gulp.task('watch',function(){
   .pipe(gulp.dest('./client/build'))
 
 });
+
+gulp.task('watch2',function(){
+  //gulp.watch('./src/styles.css','styles');
+  var watchCSS = watchify(browserify({
+        entries:'./src/styles.css',
+        transform:concat,
+        debug:false,
+        cache: {}, packageCache: {}, fullPaths: true
+  }));
+  return watchCSS.on('update',function(){
+    watchCSS.bundle()
+    .pipe(source('./src/all.css'))
+    .pipe(gulp.dest('./src/'))
+  })
+  // .bundle()
+  // .pipe(source('./src/all.css'))
+  // .pipe(gulp.dest('./src/'))
+})
 
 
 gulp.task('build',function(){
@@ -58,4 +81,4 @@ gulp.task('server',function(){
 
 
 gulp.task('default',
-  ['server','build','watch']);
+  ['server','build','styles','watch','watch2']);

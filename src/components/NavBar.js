@@ -6,7 +6,7 @@ var React =  require('react');
 var NavBar  =  React.createClass({
   render:function(){
     return(
-      <div id='navbar'>
+      <div id='navbarDom'>
         <ul>
           <li><a href="">Cakes</a></li>
           <li><a href="">Baked Goods</a></li>
