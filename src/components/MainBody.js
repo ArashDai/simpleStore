@@ -1,6 +1,6 @@
 var React = require('react');
 var Intro = require('./Intro');
-var Cake = require('./Cake');
+var Cakes = require('./Cakes');
 var Baked = require('./Baked');
 var Food = require('./Food');
 var Info = require('./Info');
@@ -15,7 +15,7 @@ var MainBody = React.createClass({
       </div>
       
       <div>
-        <Cake/>
+        <Cakes/>
       </div>
 
       <div>
