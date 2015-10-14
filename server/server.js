@@ -3,11 +3,9 @@ var app = express();
 
 
 
-app.get('/hello',function(req,res){
-  res.status('Hello World one')
-  res.send('hello');
-})
 
+
+app.use(express.static('client'));//should serve index.html page.
 
 
 var server = app.listen(3000,function(){
