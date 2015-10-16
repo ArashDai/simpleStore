@@ -14,7 +14,6 @@ var App = React.createClass({
         <div>
           <Header/>
         </div>       
-        <br></br>
         <div>
           <MainBody/>
         </div>

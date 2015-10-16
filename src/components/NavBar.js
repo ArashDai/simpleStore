@@ -6,7 +6,7 @@ var React =  require('react');
 var NavBar  =  React.createClass({
   render:function(){
     return(
-      <div id='navbarDom'>
+      <div id='navbarDom' className="col-xs-12">
         <ul>
           <li><a href="">Cakes</a></li>
           <li><a href="">Baked Goods</a></li>
@@ -14,7 +14,7 @@ var NavBar  =  React.createClass({
           <li><a href="">About</a></li>
         </ul>
       </div>
-      )
+    )
   }
 })
 

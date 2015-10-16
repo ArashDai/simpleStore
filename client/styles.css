@@ -1,28 +1,57 @@
 #main {
-
+background-image:url('./assets/wood-texture.jpg');
+background-repeat: true;
+background-size: 35em;
 }
 
 #topboxDom {
-background-color: lightblue;  
+background-color: lightblue;
+display:inline;
+overflow: auto;
 }
+
+
+#logo{
+height:4em;
+}
+
 #navbarDom {
 background-color:blue;
+height:2em ;
+}
+
+#navbarDom li{
+display:inline;
+padding: 20px; 
+}
+
+#introDom{
+height:20em ;
+background-color: white;
+}
+
+#introImg{
+/*max-height:20em ;  */
 }
 
 #bakedDom {
 background-color: tan;
+height:20em ;  
 }
 
 #cakesDom {
 background-color: green;
+height:20em ;  
 }
 
 #foodDom {
 background-color: red;
+height:20em ;  
 }
 
 #infoDom {
 background-color: purple;
+height:20em ;  
 }
 
 

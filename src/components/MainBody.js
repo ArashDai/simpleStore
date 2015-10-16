@@ -12,7 +12,7 @@ var MainBody = React.createClass({
       <div>
         <Intro/>
       </div>
-      
+      <br></br>
       <div>
         <Cakes/>
       </div>
