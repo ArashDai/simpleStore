@@ -3,58 +3,111 @@ background-image:url('./assets/wood-texture.jpg');
 background-repeat: true;
 background-size: 35em;
 }
+#mainbodyDom{
 
+}
 #topboxDom {
 background-color: lightblue;
-display:inline;
+display: inline;
 overflow: auto;
 }
 
 
 #logo{
-height:4em;
+height: 4em;
 }
 
 #navbarDom {
-background-color:blue;
-height:2em ;
+background-color: blue;
+height: 2em ;
 }
 
 #navbarDom li{
-display:inline;
+display: inline;
 padding: 20px; 
 }
 
 #introDom{
-height:20em ;
-background-color: white;
+width:100%;
+background-color: transparent;
+/*object-fit:cover;*/
+overflow:hidden;
+
 }
 
 #introImg{
-/*max-height:20em ;  */
+padding:0em;
+margin:0em;
+object-fit:cover;
+height:100%;
+
 }
 
-#bakedDom {
-background-color: tan;
-height:20em ;  
+#cakeNav li{
+display: inline;
+padding-right: 1.5em;
+padding-left: 1.5em;
+border:1px solid black;
 }
 
 #cakesDom {
 background-color: green;
-height:20em ;  
+height: 20em ;  
 }
 
+#cakeImages li{
+display: inline;
+outline: 1px solid black; 
+padding: 1em;
+margin: .5em;
+}
+
+#cakeBlurb{
+display: block;
+outline:1px solid black;
+}
+
+#bakedDom {
+background-color: tan;  
+}
+
+#bakedWrapper{
+height: 100%;
+}
+#breadImg{
+
+}
+#pastryImg{
+
+}
+#pastryButton{
+
+}
+
+#breadButton{
+
+}
+
+
 #foodDom {
-background-color: red;
-height:20em ;  
+background-color: red;  
 }
 
 #infoDom {
-background-color: purple;
-height:20em ;  
+background-color: purple;  
 }
 
+#infoWrapper{
+  display:inline;
+}
 
+#map{
+  border:1px solid green;
+}
+
+#info{
+  border:1px solid green;
+}
 
 
 

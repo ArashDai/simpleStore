@@ -8,7 +8,7 @@ var Food = require('./Food');
 var MainBody = React.createClass({
   render:function(){
     return(
-    <div>
+    <div id="mainBodyDom">
       <div>
         <Intro/>
       </div>
