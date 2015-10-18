@@ -8,8 +8,6 @@ var Header = React.createClass({
 
       <div>
         <TopBox/>
-        <br></br>
-        <NavBar/>
       </div>
 
     )

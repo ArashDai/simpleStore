@@ -1,7 +1,7 @@
 {
   "name": "simplestore",
   "version": "1.0.0",
-  "description": "a simple store boilerplate that can be reused",
+  "description": "a simple store",
   "main": "main.js",
   "dependencies": {
     "bootstrap": "^3.3.5",

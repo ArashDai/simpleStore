@@ -4,24 +4,43 @@ var React =  require('React');
 var TopBox = React.createClass({
   render:function(){
     return(
-      <div id="topboxDom" className="col-xs-12" >
 
-        <div className="row col-xs-10">
-
-          <a><div id='shoppingCart' className="hidden-xs glyphicon glyphicon-shopping-cart" ></div></a>
-
-          <div className="col-xs-offset-6"><img id='logo' src="./assets/mayerslogo.png" /></div>
-
-          <div></div>
-
-          <a> <div id='login' className="hidden-xs col-xs-push-3 glyphicon glyphicon-user"> Login</div></a>
+          <nav className="navbar navbar-default navbar-static-top container-fluid">
         
-        </div>
+
+              <div id="betterName" className=" navbar-header">
+
+                <div className="row">
+                 
+                  <a href="#"><img className="navbar-brand col-xs-offset-3 col-xs-5 col-sm-8" id='logo' src="./assets/newbakerylogo.png" /></a>
       
-      </div>
+
+                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span className="sr-only">Toggle navigation</span>
+                      <span className="icon-bar"></span>
+                      <span className="icon-bar"></span>
+                      <span className="icon-bar"></span>
+                  </button>
+                
+                </div>
+              </div>
+
+              <div id="navbar" className="navbar-collapse collapse">
+                <ul className="nav navbar-nav" aria-expanded="false">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                
+                </ul>
+                <ul className="nav navbar-nav navbar-right">
+                  <li><a href="../navbar/">Default</a></li>
+                  <li className="active"><a href="./">Static top <span className="sr-only">(current)</span></a></li>
+                  <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                </ul>
+              </div>
+          
+        </nav>
       )
   }
-
 
 })
 

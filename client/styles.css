@@ -11,10 +11,12 @@ background-color: lightblue;
 display: inline;
 overflow: auto;
 }
-
+#betterName{
+display: inline;
+}
 
 #logo{
-height: 4em;
+height: 7em;
 }
 
 #navbarDom {
@@ -94,7 +96,8 @@ background-color: red;
 }
 
 #infoDom {
-background-color: purple;  
+background-color: purple;
+
 }
 
 #infoWrapper{
