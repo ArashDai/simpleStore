@@ -13,7 +13,8 @@ var App = React.createClass({
       
         <div>
           <Header/>
-        </div>       
+        </div>    
+        <br></br>   
         <div>
           <MainBody/>
         </div>
