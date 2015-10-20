@@ -5,20 +5,23 @@ var Baked = React.createClass({
   render:function(){
     return(
       <div id="bakedDom" className="container-fluid">
-        <div>Baked Goods</div>
 
-        <div id="bakedWrapper" className="container-fluid">
-          <br></br>
+        
           
             <div id="pastryButton" className="col-xs-6">
-              <img src="./assets/croissant.jpg" className="col-xs-12"/>
+              <p className='col-xs-offset-4'>Pastries</p>
+                <a src="">
+                  <img src="./assets/croissant.jpg" className="col-xs-12 img-circle"/>
+                </a>
             </div>
          
             <div id="breadButton" className="col-xs-6">
-              <img src="./assets/bread.jpg" className="col-xs-12"/>
+              <p className='col-xs-offset-4'>Breads</p>
+                <a src="">
+                  <img src="./assets/bread.jpg" className="col-xs-12 img-circle"/>
+                </a>  
             </div>
-          <br></br>
-        </div>
+          
       </div>
 
       )

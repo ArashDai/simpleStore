@@ -34,6 +34,7 @@ var Cakes = React.createClass({
 
           <div id="cakeBlurb" className="col-xs-12">
           text about our instore cakes will go here
+          this is the initial state
           </div>
 
         </div>

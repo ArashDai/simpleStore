@@ -54,6 +54,14 @@ margin:0em;
 #cakeIntro{
 width:100%; 
 overflow:hidden;
+background-color:white;
+font-family: sans-serif;
+font-size: 2em;
+}
+
+#cakeIntro p {
+padding-bottom: 0em;
+margin-bottom: 0em;
 }
 
 #cakeNav li{
@@ -72,13 +80,25 @@ background-color: white;
 outline:1px solid black;
 }
 
-#bakedDom {
-background-color: tan;  
+#bakedIntro{
+background-color: white;
+width:100%; 
+overflow:hidden;
+font-family: sans-serif;
+font-size: 2em;
 }
 
-#bakedWrapper{
-height: 100%;
+#bakedImg{
+object-fit:cover;
+padding:0em;
+margin:0em;
 }
+
+#bakedDom {
+background-color: white;  
+}
+
+
 #breadImg{
 
 }
@@ -93,13 +113,20 @@ height: 100%;
 
 }
 
+#foodIntro{
+width:100%; 
+overflow:hidden;
+background-color:white;
+font-family: sans-serif;
+font-size: 2em;
+}
 
 #foodDom {
-background-color: red;  
+background-color: white;  
 }
 
 #infoDom {
-background-color: purple;
+background-color: white;
 
 }
 
@@ -107,13 +134,8 @@ background-color: purple;
   display:inline;
 }
 
-#map{
-  border:1px solid green;
+#footer{
+  background-color: white;
 }
-
-#info{
-  border:1px solid green;
-}
-
 
 
