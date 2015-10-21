@@ -27,14 +27,14 @@ var TopBox = React.createClass({
 
               <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav" aria-expanded="false">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                
+                  <li><a href="#Cakes">Cakes</a></li>
+                  <li><a href="#Bakedgoods">Baked Goods</a></li>
+                  <li><a href="#Food">Food Menu</a></li>
                 </ul>
+
                 <ul className="nav navbar-nav navbar-right">
-                  <li><a href="../navbar/">Default</a></li>
-                  <li className="active"><a href="./">Static top <span className="sr-only">(current)</span></a></li>
-                  <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                  <li><a href="">Shopping Cart </a></li>
+                  <li><a href="">Login</a></li>
                 </ul>
               </div>
           

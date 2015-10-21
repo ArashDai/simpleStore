@@ -7,7 +7,7 @@ var FoodIntro = React.createClass({
 
       <div id="foodIntro">
        <p className = 'col-xs-offset-4 col-xs-6'> Food Menu </p>
-       <img id="bakedImg" className="col-xs-12" src="/assets/PecanDanish.jpg"/>
+       <img id="bakedImg" className="col-xs-12" src="/assets/sandwich.jpg"/>
     
       </div>
 

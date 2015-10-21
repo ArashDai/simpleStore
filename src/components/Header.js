@@ -8,6 +8,7 @@ var Header = React.createClass({
 
       <div>
         <TopBox/>
+
       </div>
 
     )
