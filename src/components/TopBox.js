@@ -33,8 +33,8 @@ var TopBox = React.createClass({
                 </ul>
 
                 <ul className="nav navbar-nav navbar-right">
-                  <li><a href="">Shopping Cart </a></li>
                   <li><a href="">Login</a></li>
+                  <li><a href="">Shopping Cart</a></li>
                 </ul>
               </div>
           
