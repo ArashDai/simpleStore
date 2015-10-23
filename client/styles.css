@@ -1,7 +1,7 @@
 #main {
-background-image:url('./assets/wood-texture.jpg');
+background-image:url('./assets/ricepaper.png');
 background-repeat: true;
-background-size: 35em;
+background-size: ;
 }
 #mainbodyDom{
 
@@ -137,4 +137,6 @@ background-color: white;
   background-color: white;
 }
 
-
+#Map{
+  pointer-events:none;
+}
