@@ -8,7 +8,7 @@ var Baked = React.createClass({
 
         
           
-            <div id="pastryButton" className="col-xs-6 col-sm-3">
+            <div id="pastryButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
               <p className='col-xs-offset-4 col-sm-offset-5'>Pastries</p>
                 <a src="">
                   <img src="./assets/squaredcreampuff.jpg" className="col-xs-12 img-circle"/>
