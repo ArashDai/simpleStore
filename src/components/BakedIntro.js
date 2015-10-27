@@ -6,9 +6,11 @@ var BakedIntro = React.createClass({
     return(
 
       <div id="bakedIntro">
-       <p className = 'col-xs-offset-4 col-xs-6'> Baked Goods </p>
-       <img id="bakedImg" className="col-xs-12" src="/assets/PecanDanish.jpg"/>
-    
+       
+       <p className = 'col-xs-offset-4 col-xs-6 '> Baked Goods </p>
+       <div className="col-xs-12 col-sm-10 col-sm-offset-1">
+          <img id="bakedImg" className='img-responsive' src="/assets/PecanDanish.jpg"/>
+       </div>    
       </div>
 
       )
