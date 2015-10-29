@@ -30,9 +30,8 @@ padding: 20px;
 }
 
 #introDom{
-width:100%;
 background-color: transparent;
-/*object-fit:cover;*/
+
 overflow:hidden;
 
 }
@@ -41,7 +40,6 @@ overflow:hidden;
 padding:0em;
 margin:0em;
 object-fit:cover;
-height:100%;
 
 }
 
