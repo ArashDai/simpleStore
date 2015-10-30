@@ -7,17 +7,18 @@ var Baked = React.createClass({
       <div id="bakedDom" className="container-fluid">
  
             <div id="pastryButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
-              <p className='col-xs-offset-4 col-sm-offset-5'>Pastries</p>
                 <a src="">
                   <img src="./assets/squaredcreampuff.jpg" className="col-xs-12 img-circle"/>
                 </a>
+                <p className='text-center'>Pastries</p>
             </div>
          
             <div id="breadButton" className="col-xs-6 col-sm-3">
-              <p className='col-xs-offset-4 col-sm-offset-5' >Breads</p>
+              
                 <a src="">
                   <img src="./assets/squaredbread.jpg" className="col-xs-12 img-circle"/>
-                </a>  
+                </a>
+                <p className='text-center' >Breads</p>  
             </div>
           
       </div>

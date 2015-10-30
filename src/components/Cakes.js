@@ -7,24 +7,24 @@ var Cakes = React.createClass({
       <div id="cakesDom" className="container-fluid">
 
         
-          <ul className="" id="cakeNav">
+          <ul className="text-center" id="cakeNav">
             
               <li className='col-xs-3 col-sm-offset-2 col-sm-2'>
-              <a>Cakes</a>
+              <a className="btn btn-default" href="#" role="button">Cakes</a>
               </li>
             
             
               <li className='col-xs-3 col-sm-2'>
-              <a>Weddings</a>
+              <a className="btn btn-default" href="#" role="button">Weddings</a>
               </li>
             
             
               <li className='col-xs-3 col-sm-2'>
-              <a>Birthday</a>
+              <a className="btn btn-default" href="#" role="button">Birthday</a>
               </li>            
             
               <li className='col-xs-3 col-sm-2'>
-              <a>Events</a>
+              <a className="btn btn-default" href="#" role="button">Events</a>
               </li>
             
           </ul>
