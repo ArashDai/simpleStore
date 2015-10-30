@@ -42,10 +42,18 @@ object-fit:cover;
 
 }
 
-#cakeImg{
+#solocakeImg{
 object-fit:cover;
 padding:0em;
 margin:0em;
+}
+
+#cakeImg{
+
+margin-right: 1em ;
+margin-left: 1em ;
+margin-bottom: 1em ;
+
 }
 
 #cakeIntro{
@@ -144,4 +152,9 @@ background-color: white;
 
 #Map{
 
+}
+
+table tr td {
+padding-right:2em;
+padding-bottom:1em;
 }
