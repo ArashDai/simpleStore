@@ -5,9 +5,7 @@ var Baked = React.createClass({
   render:function(){
     return(
       <div id="bakedDom" className="container-fluid">
-
-        
-          
+ 
             <div id="pastryButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
               <p className='col-xs-offset-4 col-sm-offset-5'>Pastries</p>
                 <a src="">

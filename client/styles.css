@@ -7,7 +7,6 @@ padding: 0em;
 
 }
 #topboxDom {
-
 width:100%;
 }
 #betterName{
@@ -50,7 +49,7 @@ margin:0em;
 }
 
 #cakeIntro{
-width:100%; 
+width:95%; 
 overflow:hidden;
 background-color:white;
 font-family: sans-serif;
@@ -61,8 +60,13 @@ font-size: 2em;
 padding-bottom: 0em;
 margin-bottom: 0em;
 }
+#cakeNav{
+  margin: 0em;
+  padding: 0em;
+}
 
 #cakeNav li{
+display:inline;
 
 }
 #this{
@@ -70,6 +74,7 @@ text-align: center;
 }
 #cakesDom {
 background-color: white;
+width:95%; 
 
 }
 
@@ -79,7 +84,7 @@ background-color: white;
 
 #bakedIntro{
 background-color: white;
-width:100%; 
+width:95%; 
 overflow:hidden;
 font-family: sans-serif;
 font-size: 2em;
@@ -93,6 +98,7 @@ margin:0em;
 
 #bakedDom {
 background-color: white;  
+width:95%; 
 }
 
 
@@ -111,7 +117,7 @@ background-color: white;
 }
 
 #foodIntro{
-width:100%; 
+width:95%; 
 overflow:hidden;
 background-color:white;
 font-family: sans-serif;
@@ -120,6 +126,7 @@ font-size: 2em;
 
 #foodDom {
 background-color: white;  
+width:95%; 
 }
 
 #infoDom {

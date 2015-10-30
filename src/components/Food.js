@@ -5,8 +5,6 @@ var Food = React.createClass({
   render:function(){
     return(
       <div id="foodDom" className="container-fluid">
-  
-          
           
             <div id="breakfastButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
               <p className='col-xs-offset-4'>Breakfast</p>

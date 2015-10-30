@@ -6,29 +6,29 @@ var Cakes = React.createClass({
     return(
       <div id="cakesDom" className="container-fluid">
 
-        <div className="navbar" >
-          <ul className="nav nav-tabs" id="cakeNav">
+        
+          <ul className="" id="cakeNav">
             
-              <li role="presentation" className="active">
+              <li className='col-xs-3 col-sm-offset-2 col-sm-2'>
               <a>Cakes</a>
               </li>
             
             
-              <li role="presentation">
+              <li className='col-xs-3 col-sm-2'>
               <a>Weddings</a>
               </li>
             
             
-              <li role="presentation">
+              <li className='col-xs-3 col-sm-2'>
               <a>Birthday</a>
               </li>            
             
-              <li role="presentation">
+              <li className='col-xs-3 col-sm-2'>
               <a>Events</a>
               </li>
             
           </ul>
-        </div>
+        
 
         <div id="weddingBody">
 
