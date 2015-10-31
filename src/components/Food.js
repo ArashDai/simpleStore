@@ -6,18 +6,18 @@ var Food = React.createClass({
     return(
       <div id="foodDom" className="container-fluid">
           
-            <div id="breakfastButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
-              <p className='col-xs-offset-4'>Breakfast</p>
+            <div id="breakfastButton" className="col-xs-6 col-sm-3 col-sm-offset-2">
                 <a>
                   <img src="./assets/sandwich2.jpg" className="col-xs-12 img-circle"/>
                 </a>
+                <p className='text-center'>Breakfast</p>
             </div>
          
-            <div id="lunchButton" className="col-xs-6 col-sm-3">
-              <p className='col-xs-offset-4'>Lunch</p>
+            <div id="lunchButton" className="col-xs-6 col-sm-3 col-sm-push-2">
                 <a>
                   <img src="./assets/sandwich2.jpg" className="col-xs-12 img-circle"/>
                 </a>
+                <p className='text-center'>Lunch</p>
             </div>
           <br></br>
 

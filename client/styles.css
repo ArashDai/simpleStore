@@ -69,7 +69,8 @@ padding-bottom: 0em;
 margin-bottom: 0em;
 }
 #cakeTitle{
-  background-color:;
+  padding-bottom:2em;
+  
 }
 #cakeNav{
   margin: 0em;
@@ -109,7 +110,8 @@ margin:0em;
 #bakedDom {
 background-color: white;  
 width:95%; 
-padding-top: 1em;
+padding-top: 3em;
+padding-bottom: 2em;
 }
 
 
@@ -138,6 +140,8 @@ font-size: 2em;
 #foodDom {
 background-color: white;  
 width:95%; 
+padding-top: 3em;
+padding-bottom: 2em;
 }
 
 #infoDom {

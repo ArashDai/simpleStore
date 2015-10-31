@@ -34,7 +34,7 @@ var TopBox = React.createClass({
                   <li><a href="#Food">Food</a></li>
                 </ul>
                 
-                <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-3 hidden-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
+                <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-3 hidden-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
 
                 <ul className="nav navbar-nav navbar-right">
                   <li><a href="">Login</a></li>

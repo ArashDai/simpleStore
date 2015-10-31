@@ -20,7 +20,7 @@ var Cakes = React.createClass({
             
             
               <li className='col-xs-3 col-sm-2'>
-              <a className="btn btn-default" href="#" role="button">Birthday</a>
+              <a className="btn btn-default" href="#" role="button">Birthdays</a>
               </li>            
             
               <li className='col-xs-3 col-sm-2'>

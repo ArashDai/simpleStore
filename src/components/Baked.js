@@ -6,14 +6,14 @@ var Baked = React.createClass({
     return(
       <div id="bakedDom" className="container-fluid">
           
-            <div id="pastryButton" className="col-xs-6 col-sm-3 col-sm-offset-3">
+            <div id="pastryButton" className="col-xs-6 col-sm-3 col-sm-offset-2">
                 <a src="">
                   <img src="./assets/squaredcreampuff.jpg" className="col-xs-12 img-circle"/>
                 </a>
                 <p className='text-center'>Pastries</p>
             </div>
          
-            <div id="breadButton" className="col-xs-6 col-sm-3">
+            <div id="breadButton" className="col-xs-6 col-sm-3 col-sm-push-2">
               
                 <a src="">
                   <img src="./assets/squaredbread.jpg" className="col-xs-12 img-circle"/>
