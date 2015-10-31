@@ -14,7 +14,7 @@ var TopBox = React.createClass({
 
                 <div className="row">
                  
-                  <a href="#"><img className="navbar-brand col-xs-offset-3 col-xs-5 visible-xs" id='logo' src="./assets/newbakerylogo.png" /></a>
+                  <a href="#"><img className="navbar-brand col-xs-offset-3 col-xs-5 visible-xs text-center" id='logo' src="./assets/newbakerylogo.png" /></a>
       
 
                   <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -34,7 +34,7 @@ var TopBox = React.createClass({
                   <li><a href="#Food">Food</a></li>
                 </ul>
                 
-                <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-3 hidden-xs" id='logo' src="./assets/newbakerylogo.png" />
+                <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-3 hidden-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
 
                 <ul className="nav navbar-nav navbar-right">
                   <li><a href="">Login</a></li>
