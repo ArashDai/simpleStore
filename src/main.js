@@ -6,7 +6,7 @@ var Footer = require('./components/Footer');
 var Router = require('react-router');
 var Link = Router.Link;
 var Route = Router.Route;
-
+var Routes = require('./Router.js')
 
 var App = React.createClass({
   render:function(){
@@ -25,7 +25,7 @@ var App = React.createClass({
         <div>
           <Footer/>
         </div>
-
+      {this.props.children}
       </div>
       )
   }
