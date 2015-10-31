@@ -9,8 +9,8 @@ padding: 0em;
 #topboxDom {
 width:100%;
 }
-#betterName{
-
+#introBlurb{
+padding-bottom:1em;
 }
 
 #logo{
@@ -68,6 +68,9 @@ font-size: 2em;
 padding-bottom: 0em;
 margin-bottom: 0em;
 }
+#cakeTitle{
+  background-color:;
+}
 #cakeNav{
   margin: 0em;
   padding: 0em;
@@ -77,9 +80,7 @@ margin-bottom: 0em;
 display:inline;
 
 }
-#this{
-text-align: center;  
-}
+
 #cakesDom {
 background-color: white;
 width:95%; 
@@ -87,7 +88,8 @@ width:95%;
 }
 
 #cakeBlurb{
-
+padding-top: 1em;
+padding-bottom: 1em;
 }
 
 #bakedIntro{
@@ -107,6 +109,7 @@ margin:0em;
 #bakedDom {
 background-color: white;  
 width:95%; 
+padding-top: 1em;
 }
 
 

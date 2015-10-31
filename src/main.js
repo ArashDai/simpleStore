@@ -3,6 +3,9 @@ var ReactDom = require('react-dom');
 var Header = require('./components/Header');
 var MainBody = require('./components/MainBody');
 var Footer = require('./components/Footer');
+var Router = require('react-router');
+var Link = Router.Link;
+var Route = Router.Route;
 
 
 var App = React.createClass({

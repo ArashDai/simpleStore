@@ -28,7 +28,7 @@ var TopBox = React.createClass({
               <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav" aria-expanded="false">
                   <li><a href="#Cakes">Cakes</a></li>
-                  <li><a href="#Bakedgoods">Baked Goods</a></li>
+                  <li><a href="#Baked">Baked Goods</a></li>
                   <li><a href="#Food">Food</a></li>
                 </ul>
                 

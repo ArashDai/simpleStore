@@ -18,19 +18,16 @@ var MainBody = React.createClass({
 
       <div>
         <CakeIntro/>
-        
         <Cakes/>
-           <br></br>
+          <br></br>
         <BakedIntro/>
-
         <Baked/>
-            <br></br>  
-        <FoodIntro/>
-            
+          <br></br>  
+        <FoodIntro/> 
         <Food/>
 
       </div>
-
+      
     
     </div>  
 

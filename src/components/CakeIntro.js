@@ -6,8 +6,8 @@ var CakeIntro= React.createClass({
     return(
 
       <div id="cakeIntro" className="container-fluid">
-       <p className = 'text-center'>Cakes</p>
-       <br></br>
+      
+       <p id='cakeTitle' className = 'text-center'>Cakes</p>
        <img id="solocakeImg" className="col-xs-12 visible-xs" src="/assets/CS-080.jpg"/>
        <div className="hidden-xs">
           <div className='row col-sm-offset-2'>

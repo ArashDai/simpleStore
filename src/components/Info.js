@@ -20,7 +20,7 @@ var Info = React.createClass({
                 <td></td>
             </tr>
             <tr> 
-                <td>Monday - Friday</td>
+                <td>Weekdays</td>
                 <td></td>
                 <td>7:00-5:30</td>
             </tr>
