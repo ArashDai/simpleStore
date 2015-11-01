@@ -14,17 +14,17 @@ var App = React.createClass({
 
       <div>
       
-        <div>
+        
           <Header/>
-        </div>    
+           
         <br></br>   
-        <div>
+      
           <MainBody/>
-        </div>
+        
         <br></br>
-        <div>
+      
           <Footer/>
-        </div>
+      
       {this.props.children}
       </div>
       )
