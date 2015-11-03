@@ -1,35 +1,16 @@
 var React = require('react');
 var ReactDom = require('react-dom');
+var Router = require('react-router').Router;
+var Route = require('react-router').Route;
+var createBrowserHistory = require('history/lib/createBrowserHistory');
+
+
+var history = createBrowserHistory();
+
 var Header = require('./components/Header');
 var MainBody = require('./components/MainBody');
 var Footer = require('./components/Footer');
-var Router = require('react-router');
-var Link = Router.Link;
-var Route = Router.Route;
-var Routes = require('./Router.js')
-
-var App = React.createClass({
-  render:function(){
-    return(
-
-      <div>
-      
-        
-          <Header/>
-           
-        <br></br>   
-      
-          <MainBody/>
-        
-        <br></br>
-      
-          <Footer/>
-      
-      {this.props.children}
-      </div>
-      )
-  }
-});
+var Routes = require('./Routes.js');
 
 
-ReactDom.render(<App/>, document.getElementById('main'));
+ReactDom.render( <Router history={history} routes={Routes} />,document.getElementById('main'));

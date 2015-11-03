@@ -28,7 +28,7 @@ var MainBody = React.createClass({
 
       </div>
       
-    
+    {this.props.children}
     </div>  
 
     )
