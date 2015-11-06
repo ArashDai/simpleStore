@@ -13,7 +13,6 @@ var Routes = (
       <IndexRoute component ={require('./components/MainBody')}/>
        
        
-
     </Route>
 
   )
