@@ -17,7 +17,6 @@ var App = React.createClass({
 
           <div className='container-fluid'>
             {this.props.children}
-            {React.cloneElement(this.props.children)}
           </div>
 
           <Footer/>
