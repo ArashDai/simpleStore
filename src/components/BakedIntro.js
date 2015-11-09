@@ -10,6 +10,7 @@ var BakedIntro = React.createClass({
        <div className="col-xs-12 col-sm-10 col-sm-offset-1">
           <img id="bakedImg" className='img-responsive' src="/assets/PecanDanish.jpg"/>
        </div>    
+       
       </div>
 
       )
