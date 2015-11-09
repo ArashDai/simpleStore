@@ -6,7 +6,7 @@ var Link = require('react-router').Link;
 
 
 var Routes = (
-    <Router>
+    
 
       <Route path ='/' component ={require('./components/App')}>
       
@@ -17,7 +17,7 @@ var Routes = (
       </Route>
         
 
-    </Router>
+    
 
   );
 
