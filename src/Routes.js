@@ -8,11 +8,11 @@ var Link = require('react-router').Link;
 var Routes = (
     
 
-      <Route path ='/' component ={require('./components/App')}>
+      <Route path ="/" component={require("./components/App")}>
       
-        <IndexRoute component ={require('./components/MainBody')}/>
+        <IndexRoute component={require("./components/MainBody")}/>
 
-        <Route path ='/gallery' component ={require('./components/Gallery')} />
+        <Route path ="gallery" component={require("./components/Gallery")} />
 
       </Route>
         

@@ -12,3 +12,8 @@ var Routes = require('./Routes.js');
 
 
 ReactDom.render( <Router history={history} routes={Routes} />,document.getElementById('main'));
+
+
+
+//history={history} removed because it broke routing,
+//but now there is gibberish in url 

@@ -23,3 +23,14 @@ var Gallery = React.createClass({
 
 
 module.exports = Gallery;
+
+
+
+
+          // <WeddingImgs/>
+          
+          // <BakedImgs/>
+          
+          // <CakeImgs/>
+          
+          // <FoodImgs/>
