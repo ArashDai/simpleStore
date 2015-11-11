@@ -11,12 +11,12 @@ var MainBody = React.createClass({
   render:function(){
     return(
     <div id="mainBodyDom">
-      <div>
+      <div className='col-md-offset-1 col-md-10'>
         <Intro/>
       </div>
       <br></br>
 
-      <div>
+      <div className='col-md-offset-1 col-md-10'>
         <CakeIntro/>
         <Cakes/>
           <br></br>

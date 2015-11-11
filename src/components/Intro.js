@@ -4,7 +4,7 @@ var React =  require('react');
 var Intro = React.createClass({
   render:function(){
     return(
-      <div id="introDom" className="col-sm-10 col-sm-offset-1">
+      <div id="introDom" className="container-fluid">
         <div className="col-xs-12 col-sm-10 col-sm-offset-1">
           <img id="introImg" className="img-responsive" src="/assets/diningroom.jpg" />
         </div>

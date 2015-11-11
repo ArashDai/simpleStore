@@ -50,8 +50,8 @@ margin:0em;
 
 #cakeImg{
 
-margin-right: 1em ;
-margin-left: 1em ;
+/*margin-right: 1em ;
+margin-left: 1em ;*/
 margin-bottom: 1em ;
 
 }
@@ -70,7 +70,7 @@ margin-bottom: 0em;
 }
 #cakeTitle{
   padding-bottom:2em;
-  
+  padding-left: 1em;
 }
 #cakeNav{
   margin: 0em;
