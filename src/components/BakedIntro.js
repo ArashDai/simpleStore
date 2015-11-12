@@ -1,5 +1,5 @@
 var React = require('react');
-
+var Link = require('react-router').Link;
 
 var BakedIntro = React.createClass({
   render:function(){
@@ -9,10 +9,12 @@ var BakedIntro = React.createClass({
        
         <div className='row'>      
           <p id='cakeTitle' className = 'text-center'>Pastries</p>
-           
-          <a id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Pastry Menu</a>
-            
-          <a id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Bread Menu</a>       
+           <Link to="/PastryMenu">
+             <a id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Pastry Menu</a>
+            </Link>
+            <Link to="/BreadMenu">
+              <a id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Bread Menu</a> 
+            </Link>        
         </div>  
 
         <img id="solocakeImg" className="col-xs-12 visible-xs" src="/assets/CS-080.jpg"/>

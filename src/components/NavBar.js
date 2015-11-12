@@ -14,7 +14,9 @@ var NavBar = React.createClass({
 
                 <div className="row">
                  
-                  <a href="#"><img className="navbar-brand col-xs-offset-3 col-xs-5 visible-xs text-center" id='logo' src="./assets/newbakerylogo.png" /></a>
+                  <Link to="/">
+                    <img className="navbar-brand col-xs-offset-3 col-xs-5 visible-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
+                  </Link>  
       
 
                   <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -26,16 +28,17 @@ var NavBar = React.createClass({
                 
                 </div>
               </div>
-
-              <img className="col-sm-3 col-md-2 col-lg-2 hidden-xs" id='logo' src="./assets/newbakerylogo.png" />
+              <Link to="/">
+                <img className="col-sm-3 col-md-2 col-lg-2 hidden-xs" id='logo' src="./assets/newbakerylogo.png" />
+              </Link>  
 
               <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav" aria-expanded="false">
-                  <li><Link to="./cakes">Cakes</Link></li>
-                  <li><a href="#Baked">Pastries</a></li>
-                  <li><a href="#Food">Breads</a></li>
-                  <li><a href="#Food">Lunch</a></li>
-                  <li><a href="#Food">Breakfast</a></li>
+                  <li><Link to="/CakeMenu">Cakes</Link></li>
+                  <li><Link to="/PastryMenu">Pastries</Link></li>
+                  <li><Link to="/BreadMenu">Breads</Link></li>
+                  <li><Link to="/LunchMenu">Lunch</Link></li>
+                  <li><Link to="/BreakfastMenu">Breakfast</Link></li>
                 </ul>
                 
 

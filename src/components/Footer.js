@@ -2,6 +2,8 @@ var React = require('react');
 var Info = require('./Info');
 var Map = require('./Map');
 
+
+
 var Footer = React.createClass({
 
   render:function(){

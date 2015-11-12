@@ -1,5 +1,5 @@
 var React =  require('react');
-
+var Link = require('react-router').Link;
 
 var Baked = React.createClass({
   render:function(){
@@ -11,17 +11,17 @@ var Baked = React.createClass({
             </div>
 
             <div  className="col-xs-6 col-sm-3 col-sm-offset-2 visible-xs visible-sm">
-                <a src="">
+                <Link to="/PastryMenu">
                   <img src="./assets/squaredcreampuff.jpg" className="col-xs-12 img-circle"/>
-                </a>
+                </Link>
                 <p className='text-center'>Pastries</p>
             </div>
          
             <div  className="col-xs-6 col-sm-3 col-sm-push-2 visible-xs visible-sm">
               
-                <a src="">
+                <Link to="/BreadMenu">
                   <img src="./assets/squaredbread.jpg" className="col-xs-12 img-circle"/>
-                </a>
+                </Link>
                 <p className='text-center' >Breads</p>  
             </div>
           
