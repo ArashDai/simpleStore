@@ -18,7 +18,6 @@ var Baked = React.createClass({
             </div>
          
             <div  className="col-xs-6 col-sm-3 col-sm-push-2 visible-xs visible-sm">
-              
                 <Link to="/BreadMenu">
                   <img src="./assets/squaredbread.jpg" className="col-xs-12 img-circle"/>
                 </Link>
