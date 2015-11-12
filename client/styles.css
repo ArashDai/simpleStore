@@ -18,6 +18,10 @@ min-height: 5em;
 max-height: 6em;
 }
 
+#navbar{
+  padding-top:2em;
+}
+
 #navbarDom {
 background-color: blue;
 height: 2em ;
@@ -69,19 +73,16 @@ padding-bottom: 0em;
 margin-bottom: 0em;
 }
 #cakeTitle{
-  padding-bottom:2em;
-  padding-left: 1em;
-}
-#cakeNav{
-  margin: 0em;
-  padding: 0em;
+padding-left: 1em;
 }
 
 #cakeNav li{
 display:inline;
 
 }
-
+#cakeButton{
+ margin-bottom: 1em;
+}
 #cakesDom {
 background-color: white;
 width:95%; 
@@ -122,11 +123,12 @@ padding-bottom: 2em;
 
 }
 #pastryButton{
-
+margin-bottom: 1em;
 }
 
 #breadButton{
-
+margin-left: .5em;  
+margin-bottom: 1em;
 }
 
 #foodIntro{

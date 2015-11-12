@@ -6,10 +6,15 @@ var CakeIntro= React.createClass({
     return(
 
       <div id="cakeIntro" className="container-fluid">
-      
+       <div className='row'> 
        <p id='cakeTitle' className = 'text-center'>Cakes</p>
+
+       <a id='cakeButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9" href="#" role="button">Cake Menu</a>
+       </div>
+
+
        <img id="solocakeImg" className="col-xs-12 visible-xs" src="/assets/CS-080.jpg"/>
-       <br></br>
+       
        <div className="hidden-xs ">
           <div className='row col-sm-offset-2 col-md-offset-2'>
               <img id="cakeImg" className="img-circle col-sm-5 col-md-2" src="/assets/sqcake1.jpg"/>

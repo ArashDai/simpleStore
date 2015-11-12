@@ -6,7 +6,17 @@ var FoodIntro = React.createClass({
     return(
 
       <div id="foodIntro" className='container-fluid'>
-       <p className = 'text-center'> Food </p>
+       
+        <div className='row'>      
+          <p id='cakeTitle' className = 'text-center'>Foods</p>
+           
+          <a id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Lunch Menu</a>
+            
+          <a id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Breakfast Menu</a>       
+        </div>
+
+
+
         <div className='col-xs-12 col-sm-10 col-sm-offset-1'>
           <img id="bakedImg" className="img-responsive" src="/assets/sandwich.jpg"/>
         </div>

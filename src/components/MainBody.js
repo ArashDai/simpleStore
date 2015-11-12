@@ -25,7 +25,8 @@ var MainBody = React.createClass({
           <br></br>  
         <FoodIntro/> 
         <Food/>
-
+          <br></br>
+          
       </div>
       
     

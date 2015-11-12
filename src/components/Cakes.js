@@ -5,21 +5,19 @@ var Cakes = React.createClass({
   render:function(){
     return(
       <div id="cakesDom" className="container-fluid ">
-
-        
-          <ul className="text-center" id="cakeNav">
             
-              <li className='col-xs-3 col-xs-offset-5 col-sm-2'>
-              <a className="btn btn-default" href="#" role="button">Cakes</a>
-              </li>
-            
-          </ul>
-        
+        <a className="btn btn-default col-sm-4 col-sm-offset-4 visible-xs visible-sm" href="#" role="button">
+          Cake Menu
+        </a>
 
         <div>
 
-          <div id="cakeBlurb" className="col-xs-12 col-sm-10 col-sm-offset-1">
-          Lorem ipsum dolor sit amet, mauris tincidunt tellus nisl mattis luctus, tempor nullam, et aenean congue, nullam aliquam, at ante. Vivamus suspendisse ut nec proin in et, cursus eu taciti vitae cum, facilisis nascetur libero platea vitae libero, sodales lacinia non turpis eu wisi, vestibulum aenean habitant aliquam vestibulum maecenas. Ultrices ullam metus ante, congue eos dui condimentum dui turpis in, vulputate donec ad aliquam eget massa pede. 
+          <div id="cakeBlurb" className="col-xs-12 col-sm-10 col-sm-offset-1 ">
+          <p className='text-center'>
+          Here at Mayers Bakery we offer a wide variety of cakes for all occasions, from weddings and anniversaries to birthdays
+           <br/> 
+           To see our avalible in store tortes as well as customised cakes click the link above. 
+          </p>
           </div>
 
         </div>

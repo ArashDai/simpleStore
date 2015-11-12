@@ -3,7 +3,7 @@ var Router = require('react-router');
 var Link = Router.Link;
 var Route = Router.Route;
 
-var TopBox = React.createClass({
+var NavBar = React.createClass({
   render:function(){
     return(
 
@@ -27,14 +27,17 @@ var TopBox = React.createClass({
                 </div>
               </div>
 
+              <img className="col-sm-3 col-md-2 col-lg-2 hidden-xs" id='logo' src="./assets/newbakerylogo.png" />
+
               <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav" aria-expanded="false">
                   <li><Link to="./cakes">Cakes</Link></li>
-                  <li><a href="#Baked">Baked Goods</a></li>
-                  <li><a href="#Food">Food</a></li>
+                  <li><a href="#Baked">Pastries</a></li>
+                  <li><a href="#Food">Breads</a></li>
+                  <li><a href="#Food">Lunch</a></li>
+                  <li><a href="#Food">Breakfast</a></li>
                 </ul>
                 
-                <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-3 hidden-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
 
                 <ul className="nav navbar-nav navbar-right">
                   <li><a href="">Login</a></li>
@@ -50,4 +53,8 @@ var TopBox = React.createClass({
 
 
 
-module.exports = TopBox;
+module.exports = NavBar;
+
+
+
+// <img className="col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 hidden-xs text-center" id='logo' src="./assets/newbakerylogo.png" />
