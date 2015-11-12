@@ -1,11 +1,11 @@
 var React =  require('react');
 
 
-var Menu = React.createClass({
+var LunchMenu = React.createClass({
   render:function(){
     return(
       <div>
-        <h1>Menu</h1>
+        <h1>Lunch Menu</h1>
 
         <div id='foodmenu'>
           <h1>Sandwiches</h1>
@@ -176,4 +176,4 @@ var Menu = React.createClass({
   });
 
 
-module.exports = Menu;
+module.exports = LunchMenu;

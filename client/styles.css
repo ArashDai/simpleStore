@@ -146,6 +146,13 @@ padding-top: 3em;
 padding-bottom: 2em;
 }
 
+#eventDom{
+background-color: white;  
+width:95%; 
+padding-top: 3em;
+padding-bottom: 2em;  
+}
+
 #infoDom {
 background-color: white;
 
