@@ -4,172 +4,68 @@ var React =  require('react');
 var CakeMenu = React.createClass({
   render:function(){
     return(
-      <div>
-        <h1>Cakes Menu</h1>
+      <div id='card' className='container-fluid'>
+        <h1 className='text-center'>Cakes Menu</h1>
+          <h3 className='text-center'>Instore Cakes</h3>
 
-        <div id='Cakemenu'>
-          <h1>Sandwiches</h1>
-            <ul>
-               <li>
-                    <h3>Sandwich......</h3>
+          <div id='CakeMenuItem'>
+            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+              <h2>Sacher Torte</h2>
+            
+               
+              <p className="col-sm-offset-2" id='MenuDesc'>
+                description here
+              </p>
+                            
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Sandwich......</h3>
+              <p className='col-sm-offset-11'>
+                price here
+              </p>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Sandwich......</h3>
+          </div>
+          <br></br>
+          <div id='CakeMenuItem'>
+            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+            <h2>Parisian Torte</h2>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Sandwich......</h3>
+            <p className='col-sm-offset-1'>  
+              description here
+            </p>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
+            <p className='col-sm-offset-11'>price here</p>
 
-          <h1>Salads</h1>
-            <ul>
-              <li>
-                    <h3>Salads......</h3>
+          </div>
+          <br></br>
+          <div id='CakeMenuItem'>
+            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+            <h2>Shadow Torte</h2>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Salads......</h3>
+            <p className='col-sm-offset-1'>  
+              description here
+            </p>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
+            <p className='col-sm-offset-11'>price here</p>
 
-          <h1>Soup</h1>
-            <ul>
-               <li>
-                    <h3>Soup......</h3>
+          </div>
+          <br></br>
+          <div id='CakeMenuItem'>
+            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+            <h2> Carrot Cake</h2>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Soup......</h3>
+            <p className='col-sm-offset-1'>  
+             8in round description here
+            </p>
 
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
-        </div>
+            <p className='col-sm-offset-11'>price here</p>
 
-        <div id='bakedmenu'>
-          <h1>Danishes</h1>
-            <ul>
-               <li>
-                    <h3>Danish......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Danish......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Danish......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
-
-          <h1>Pastries</h1>
-            <ul>
-               <li>
-                    <h3>Pastry......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Pastry......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Pastry......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Pastry......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
-        </div>
-
-        <div id='cakemenu'>
-          <h1>Instore Cakes</h1>
-            <ul>
-                <li>
-                    <h3>Cake......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Cake......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Cake......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-               <li>
-                    <h3>Cake......</h3>
-
-                    <p className='foodDesc'>
-                    menu item description
-                    </p>
-               </li>
-            </ul>
-        </div>
-
+          </div>
+       
+       
+            
 
       </div>
       )}
