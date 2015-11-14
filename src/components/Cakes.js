@@ -4,7 +4,7 @@ var Link = require('react-router').Link;
 var Cakes = React.createClass({
   render:function(){
     return(
-      <div id="cakesDom" className="container-fluid ">
+      <div id="card" className="container-fluid ">
             
         <a className="btn btn-default col-sm-4 col-sm-offset-4 visible-xs visible-sm" href="#" role="button">
           Cake Menu

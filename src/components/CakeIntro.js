@@ -5,11 +5,11 @@ var CakeIntro= React.createClass({
   render:function(){
     return(
 
-      <div id="cakeIntro" className="container-fluid">
+      <div id="Intros" className="container-fluid">
        <div className='row'> 
        <p id='cakeTitle' className = 'text-center'>Cakes</p>
 
-       <a id='cakeButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9" href="#" role="button">Cake Menu</a>
+       <Link to="/CakeMenu" id='cakeButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9" role="button">Cake Menu</Link>
        </div>
 
 

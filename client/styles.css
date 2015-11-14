@@ -3,6 +3,11 @@ background-image:url('./assets/ricepaper.png');
 background-repeat: true;
 padding: 0em;
 }
+#card{
+background-color: white;
+width:95%;   
+}
+
 #mainbodyDom{
 
 }
@@ -60,7 +65,7 @@ margin-bottom: 1em ;
 
 }
 
-#cakeIntro{
+#Intros{
 width:95%; 
 overflow:hidden;
 background-color:white;

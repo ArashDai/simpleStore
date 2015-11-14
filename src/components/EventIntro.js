@@ -5,14 +5,14 @@ var EventIntro = React.createClass({
   render:function(){
     return(
 
-      <div id="foodIntro" className='container-fluid'>
+      <div id="Intros" className='container-fluid'>
        
         <div className='row'>      
           <p id='cakeTitle' className = 'text-center'>Events</p>
            
-          <a id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Lunch Menu</a>
+          <Link to='' id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9"  role="button">Lunch Menu</Link>
             
-          <a id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Breakfast Menu</a>       
+               
         </div>
 
 

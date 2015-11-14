@@ -4,7 +4,7 @@ var Link = require('react-router').Link;
 var Food = React.createClass({
   render:function(){
     return(
-      <div id="foodDom" className="container-fluid">
+      <div id="card" className="container-fluid">
           
             <div id="breakfastButton" className="col-xs-6 col-sm-3 col-sm-offset-2 visible-xs visible-sm">
                 <a>

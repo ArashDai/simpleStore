@@ -5,7 +5,7 @@ var BakedIntro = React.createClass({
   render:function(){
     return(
 
-      <div id="bakedIntro" className='container-fluid'>
+      <div id="Intros" className='container-fluid'>
        
         <div className='row'>      
           <p id='cakeTitle' className = 'text-center'>Pastries</p>
