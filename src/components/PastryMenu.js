@@ -12,7 +12,7 @@ var PastryMenu = React.createClass({
 
         <div className="col-xs-12">
 
-            <h3 className='text-center'>Danishes</h3>
+            <h3 className='text-center'>Danish</h3>
               <div className="col-xs-12">
                 <div id='pastryMenuItem'className='col-sm-offset-2 col-sm-4' >
                  <h4>Apple</h4> 
