@@ -1,4 +1,5 @@
 var React =  require('react');
+var Link = require('react-router').Link;
 
 
 var CakeMenu = React.createClass({
@@ -6,16 +7,28 @@ var CakeMenu = React.createClass({
     return(
       <div id='card' className='container-fluid'>
         <h1 className='text-center'>Cakes Menu</h1>
+
+
+
+        <p className='text-center'> an image will go here </p>
+        <p className='text-center'>a description of cake services will go here</p>
+        <p className='text-center'>a link to custom cake form here</p>
+
+
+
+
           <h3 className='text-center'>In-Store Cakes</h3>
 
           <p className='text-center'>
             A variety of these cakes are always avalible in the bakery
           </p>
 
-          <div id='CakeMenuItem'>
-            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
-            
+        
+          <div id='CakeMenuItem' className="col-md-6" >
+
               <h2>Sacher Torte</h2>
+
+              <img className="col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
             
               <p>
                8 inch round
@@ -31,12 +44,13 @@ var CakeMenu = React.createClass({
               </p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2>Parisian Torte</h2>
 
+            <img className="col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+            
             <p>
               8 inch round
             </p>
@@ -48,11 +62,13 @@ var CakeMenu = React.createClass({
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className="col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+        
+           
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2>Shadow Torte</h2>
+
+            <img className="col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
 
             <p>
               8 inch round
@@ -65,205 +81,217 @@ var CakeMenu = React.createClass({
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2> Carrot Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-             description here
+             Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
-            <h2> Fudge Torte</h2>
+          <div id='CakeMenuItem' className="col-md-6">
+            
+            <h2>Fudge Torte</h2>
+
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
 
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2> Rev Velvet Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2> Bannana Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> German Chocolate Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
+            
+          <div id='CakeMenuItem' className="col-md-6">
             
             <h2> Confetti Birthday Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+ 
             <h2> Cheesecake </h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> Chocolate Chip Cheesecake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> Strawberry Cheesecake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> Strawberry Boston Torte</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> Blackforest Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
 
           </div>
-            <br></br>
-          <div id='CakeMenuItem'>
-            <img className=" col-sm-2 img-circle" src="./assets/CS-080.jpg"/>
             
+          <div id='CakeMenuItem' className="col-md-6">
+
             <h2> Carrot Cake</h2>
 
+            <img className=" col-sm-2 col-md-3 img-circle" src="./assets/CS-080.jpg"/>
+
             <p>
               8 inch round
             </p>
 
             <p className='col-sm-offset-2' id='MenuDesc'>  
-              description here
+              Bacon ipsum dolor amet brisket tongue pastrami, jerky pork shank turducken t-bone turkey leberkas. Meatloaf frankfurter tri-tip turducken salami, flank shoulder sausage cupim meatball.
             </p>
 
             <p className='col-sm-offset-11'>price here</p>
@@ -272,6 +300,7 @@ var CakeMenu = React.createClass({
        
        
             
+          <p>Not finding what youre looking for? we can make something special for you <Link> custom cake form</Link> </p>
 
       </div>
       )}
