@@ -16,7 +16,7 @@ var CakeMenu = React.createClass({
         <p className='text-center'>a link to custom cake form here</p>
 
         <p className='text-center'>Want to see more? checkout our gallery!</p> 
-        <p className='text-center'><Link>gallery link</Link> </p>
+        <p className='text-center'> link goes here </p>
         
 
 
