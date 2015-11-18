@@ -1,7 +1,7 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 var CakeInfoForm = require('./CakeInfoForm');
-
+var CakeDescriptionForm = require('./CakeDescriptionForm');
 
  var fieldValues = {
       date:null,
@@ -15,26 +15,22 @@ var CakeInfoForm = require('./CakeInfoForm');
   }
 
 
+
 var CustomCakeForm = React.createClass({
 
-  getInitialState: function(){
-    return {
-      step:1
-    };
+  saveValues: function(fields) {
+    return function() {
+      fieldValues = Object.assign({}, fieldValues, fields)
+
+    }
   },
   
-
+  
   render:function(){
-    switch(this.state.step){
-      case 1:
-        return <CakeInfoForm />
-      case 2:
-        return //UserInfoForm 
-      case 3:
-        return //OrderConfirmation     
-
-
-    };
+      
+    return <CakeInfoForm/>
+  
+    
   }
 
 

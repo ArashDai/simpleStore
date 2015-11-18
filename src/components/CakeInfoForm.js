@@ -1,8 +1,29 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
+var CakeDescriptionForm = require('./CakeDescriptionForm');
+
+ var fieldValues = {
+      date:null,
+      time:null,
+      eventType:null,
+      servings:null,
+      cakeType:null,
+      fillingType:null,
+      frostingType:null,
+      decoration:null 
+  }
+
+
 
 var CakeInfoForm = React.createClass({
+
+saveValues: function(fields) {
+    return function() {
+      fieldValues = Object.assign({}, fieldValues, fields)
+
+    }
+},  
 
 
 render:function(){
@@ -19,7 +40,7 @@ render:function(){
 
             <br></br>      
             <label>Event Type:</label>
-                  <select ref="eventType" >
+                  <select ref="eventType" selected={fieldValues.eventType}>
                     <option value="null"></option>
                     <option value="anniversary">Anniversary</option>
                     <option value="birthday">Birthday</option>
@@ -30,7 +51,8 @@ render:function(){
 
             <br></br> 
             <label>Serving Size:</label>
-              <select ref="servingSize">
+              <select ref="servingSize" selected={fieldValues.servingSize}>
+                    <option value="null"></option>
                     <option value="10">10-20</option>
                     <option value="20">20-30</option>
                     <option value="30">30-40</option>
@@ -40,14 +62,16 @@ render:function(){
 
             <br></br> 
             <label>Cake Shape</label>
-              <select ref="cakeShape">
+              <select ref="cakeShape" selected={fieldValues.cakeShape}>
+                    <option value="null"></option>
                     <option value="sheet">Sheet Cake</option>
                     <option value="round">Round Cake</option>
               </select>
             
             <br></br> 
             <label>Cake Type</label>
-              <select ref="cakeType">
+              <select ref="cakeType" selected={fieldValues.cakeType}>
+                    <option value="null"></option>
                     <option value="chocolate">Chocolate Cake</option>
                     <option value="white">Classic Ivory Cake</option>
                     <option value="banana">Banana Cake*</option>
@@ -58,7 +82,7 @@ render:function(){
           
             <br></br> 
             <label>Filling</label>
-                <select ref="filling">
+                <select ref="filling" selected={fieldValues.filling}>
                   <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
@@ -73,7 +97,8 @@ render:function(){
 
           <br></br> 
           <label>Frosting</label>
-                <select ref="frosting">
+                <select ref="frosting" selected={fieldValues.frosting}>
+                  <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
                   <option value="mochaBC">Mocha Buttercream</option>
@@ -84,7 +109,8 @@ render:function(){
 
           <br></br> 
           <label>Decoration</label>
-                <select ref="decoration">
+                <select ref="decoration" selected={fieldValues.decoration}>
+                    <option value="null"></option>
                     <option value="floral">Floral Design</option>
                     <option value="streamers">Confetti and Streamers</option>
                     <option value="photo">Photo Cake</option>
@@ -98,9 +124,9 @@ render:function(){
 
         </form>
       </div>
-  )},
+)},
   
-  saveAndCountinue:function(e){
+saveAndCountinue:function(e){
     e.preventDefault()
 
     var data = { 
@@ -116,7 +142,6 @@ render:function(){
 
 
     this.props.saveValues(data)
-    
     this.props.nextStep()
 
 

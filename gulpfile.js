@@ -4,10 +4,8 @@ var concat = require('gulp-concat');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var reactify = require('reactify');//we can remove this now
 var watchify = require('watchify');
 var nodemon = require('gulp-nodemon');
-var babel = require("gulp-babel");//we can remove this now
 var babelify = require('babelify');
 
 
