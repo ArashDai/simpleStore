@@ -16,6 +16,7 @@ var Routes = (
       <Route path ="BreadMenu" component={require("./components/BreadMenu")} />
       <Route path ="BreakfastMenu" component={require("./components/BreakfastMenu")} />
       <Route path ="CakeMenu" component={require("./components/CakeMenu")} />
+      <Route path ="CustomCakeForm" component={require("./components/CustomCakeForm")} />
       <Route path ="LunchMenu" component={require("./components/LunchMenu")} />
       <Route path ="PastryMenu" component={require("./components/PastryMenu")} />
 
