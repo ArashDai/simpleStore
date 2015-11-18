@@ -23,14 +23,11 @@ var Routes = (
 
 
     </Route>
-        
-
-    
-
+      
   );
 
 
 module.exports = Routes;
 
 
- //<Route path ='gallery' component ={require('./components/Gallery')} />
+ 
