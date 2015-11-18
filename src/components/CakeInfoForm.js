@@ -27,6 +27,7 @@ render:function(){
                     <option value="wedding">Wedding</option>
                     <option value="other">Other</option>
                   </select>
+
             <br></br> 
             <label>Serving Size:</label>
               <select ref="servingSize">
@@ -57,18 +58,17 @@ render:function(){
           
             <br></br> 
             <label>Filling</label>
-                  <select ref="filling">
-                    <option value="null"></option>
-                    <option value="chocolateBC">Chocolate Buttercream</option>
-                    <option value="vanillaBC">Vanilla Buttercream</option>
-                    <option value="mochaBC">Mocha Buttercream</option>
-                    <option value="frenchBC">French Buttercream</option>   
-                    <option value="raspberry">Raspberry</option>  
-                    <option value="strawberryWc">Fresh Strawberries & Whipped Cream *
-                    </option>
-                    <option value="bananaWc">Fresh Bananas & Whipped Cream *</option>
-                    <option value="chocolateMo">Chocolate Mousse *</option>    
-                  </select>
+                <select ref="filling">
+                  <option value="null"></option>
+                  <option value="chocolateBC">Chocolate Buttercream</option>
+                  <option value="vanillaBC">Vanilla Buttercream</option>
+                  <option value="mochaBC">Mocha Buttercream</option>
+                  <option value="frenchBC">French Buttercream</option>   
+                  <option value="raspberry">Raspberry</option>  
+                  <option value="strawberryWc">Fresh Strawberries & Whipped Cream *</option>
+                  <option value="bananaWc">Fresh Bananas & Whipped Cream *</option>
+                  <option value="chocolateMo">Chocolate Mousse *</option>    
+                </select>
           
 
           <br></br> 
@@ -91,7 +91,7 @@ render:function(){
                     <option value="airbrush">Airbrush Design</option>
                     <option value="piped">Piped Frosting Design</option>
                     <option value="custom">Other Custom Design</option>
-                </select>    
+                </select>
             
           <br></br>     
           <button onClick={this.saveAndContinue}>Save and Continue</button>

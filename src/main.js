@@ -11,7 +11,7 @@ var Footer = require('./components/Footer');
 var Routes = require('./Routes.js');
 
 
-ReactDom.render( <Router history={history} routes={Routes} />,document.getElementById('main'));
+ReactDom.render(<Router history={history} routes={Routes} />,document.getElementById('main'));
 
 
 
