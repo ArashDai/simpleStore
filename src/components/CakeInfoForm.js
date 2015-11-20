@@ -1,7 +1,6 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
-var CakeDescriptionForm = require('./CakeDescriptionForm');
 
 
 
@@ -124,6 +123,7 @@ saveAndCountinue:function(e){
 
 
     this.props.saveValues(data)
+    
     this.props.nextStep()
 
 

@@ -3,7 +3,7 @@ var Link = require('react-router').Link;
 var CakeInfoForm = require('./CakeInfoForm');
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
- var fieldValues = {
+var fieldValues = {
       dateTime:null,
       eventType:null,
       servings:null,
