@@ -3,27 +3,9 @@ var Link = require('react-router').Link;
 
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
- var fieldValues = {
-      date:null,
-      time:null,
-      eventType:null,
-      servings:null,
-      cakeType:null,
-      fillingType:null,
-      frostingType:null,
-      decoration:null 
-  }
-
 
 
 var CakeInfoForm = React.createClass({
-
-saveValues: function(fields) {
-    return function() {
-      fieldValues = Object.assign({}, fieldValues, fields)
-
-    }
-},  
 
 
 render:function(){
@@ -40,7 +22,7 @@ render:function(){
 
             <br></br>      
             <label>Event Type:</label>
-                  <select ref="eventType" selected={fieldValues.eventType}>
+                  <select ref="eventType" selected={this.props.fieldValues.eventType}>
                     <option value="null"></option>
                     <option value="anniversary">Anniversary</option>
                     <option value="birthday">Birthday</option>
@@ -51,7 +33,7 @@ render:function(){
 
             <br></br> 
             <label>Serving Size:</label>
-              <select ref="servingSize" selected={fieldValues.servingSize}>
+              <select ref="servingSize" selected={this.props.fieldValues.servingSize}>
                     <option value="null"></option>
                     <option value="10">10-20</option>
                     <option value="20">20-30</option>
@@ -62,7 +44,7 @@ render:function(){
 
             <br></br> 
             <label>Cake Shape</label>
-              <select ref="cakeShape" selected={fieldValues.cakeShape}>
+              <select ref="cakeShape" selected={this.props.fieldValues.cakeShape}>
                     <option value="null"></option>
                     <option value="sheet">Sheet Cake</option>
                     <option value="round">Round Cake</option>
@@ -70,7 +52,7 @@ render:function(){
             
             <br></br> 
             <label>Cake Type</label>
-              <select ref="cakeType" selected={fieldValues.cakeType}>
+              <select ref="cakeType" selected={this.props.fieldValues.cakeType}>
                     <option value="null"></option>
                     <option value="chocolate">Chocolate Cake</option>
                     <option value="white">Classic Ivory Cake</option>
@@ -82,7 +64,7 @@ render:function(){
           
             <br></br> 
             <label>Filling</label>
-                <select ref="filling" selected={fieldValues.filling}>
+                <select ref="filling" selected={this.props.fieldValues.filling}>
                   <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
@@ -97,7 +79,7 @@ render:function(){
 
           <br></br> 
           <label>Frosting</label>
-                <select ref="frosting" selected={fieldValues.frosting}>
+                <select ref="frosting" selected={this.props.fieldValues.frosting}>
                   <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
@@ -109,7 +91,7 @@ render:function(){
 
           <br></br> 
           <label>Decoration</label>
-                <select ref="decoration" selected={fieldValues.decoration}>
+                <select ref="decoration" selected={this.props.fieldValues.decoration}>
                     <option value="null"></option>
                     <option value="floral">Floral Design</option>
                     <option value="streamers">Confetti and Streamers</option>
@@ -130,14 +112,14 @@ saveAndCountinue:function(e){
     e.preventDefault()
 
     var data = { 
-      date        : this.refs.name.getDOMNode().value,
-      time        : this.refs.name.getDOMNode().value,
-      eventType   : this.refs.name.getDOMNode().value,
-      servings    : this.refs.name.getDOMNode().value,
-      cakeType    : this.refs.name.getDOMNode().value,
-      fillingType : this.refs.name.getDOMNode().value,
-      frostingType: this.refs.name.getDOMNode().value,
-      decoration  : this.refs.name.getDOMNode().value
+      dateTime    : this.refs.dateTime.getDOMNode().value,
+      eventType   : this.refs.eventType.getDOMNode().value,
+      servings    : this.refs.servingSize.getDOMNode().value,
+      cakeShape   : this.refs.cakeShape.getDOMNode().value,
+      cakeType    : this.refs.cakeType.getDOMNode().value,
+      fillingType : this.refs.filling.getDOMNode().value,
+      frostingType: this.refs.frosting.getDOMNode().value,
+      decoration  : this.refs.decoration.getDOMNode().value
     }
 
 
