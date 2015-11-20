@@ -10,10 +10,10 @@ var BakedIntro = React.createClass({
         <div className='row'>      
           <p id='cakeTitle' className = 'text-center'>Pastries</p>
            <Link to="/PastryMenu">
-             <a id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Pastry Menu</a>
+             <p id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Pastry Menu</p>
             </Link>
             <Link to="/BreadMenu">
-              <a id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Bread Menu</a> 
+              <p id='breadButton' className="btn btn-default hidden-xs hidden-sm" href="#" role="button">Bread Menu</p> 
             </Link>        
         </div>  
 
