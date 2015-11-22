@@ -19,24 +19,6 @@ var fieldValues = {
 
 var CustomCakeForm = React.createClass({
 
-  getInitialState: function() {
-    return {
-      step : 1
-    }
-  },
-
-  nextStep: function() {
-    this.setState({
-      step : this.state.step + 1
-    })
-  },
-
-  previousStep: function() {
-    this.setState({
-      step : this.state.step - 1
-    })
-  },
-
   saveValues: function(fields) {
     return function() {
       this.fieldValues = Object.assign({}, fieldValues, fields)
@@ -45,22 +27,29 @@ var CustomCakeForm = React.createClass({
   },
   
   render: function() {
-    switch(this.state.step) {
-      case 1:
-        return <CakeInfoForm        fieldValues={fieldValues}
-                                    nextStep={this.nextStep}
-                                    saveValues={this.saveValues}/>
-      case 2:
-        return <CakeDescriptionForm fieldValues={fieldValues}
-                                    nextStep={this.nextStep}
-                                    saveValues={this.saveValues}/>
-     
-    };
+    return(
+     <div id='card'>
+      <h1 className='text-center'>Custom Cake Creator</h1>
+        <p className='text-center'>The perfect cake awaits</p>
+      
+      <div className='container-fluid'>
+            {this.props.children}
+      </div>
+      
+
+     </div>
+    )
   }
 
 });
 
 
 module.exports = CustomCakeForm;
+
+
+
+ // <CakeInfoForm        fieldValues={fieldValues}
+ //                                    nextStep={this.nextStep}
+ //                                    saveValues={this.saveValues}/>
 
 

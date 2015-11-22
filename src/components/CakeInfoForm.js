@@ -10,8 +10,6 @@ var CakeInfoForm = React.createClass({
 render:function(){
     return(
       <div id='card' className='container-fluid'>
-        <h1 className='text-center'>Custom Cake Creator</h1>
-        <p className='text-center'>The perfect cake awaits</p>
 
         <form className='col-xs-12'>
           
@@ -21,7 +19,7 @@ render:function(){
 
             <br></br>      
             <label>Event Type:</label>
-                  <select ref="eventType" selected={this.props.fieldValues.eventType}>
+                  <select ref="eventType" >
                     <option value="null"></option>
                     <option value="anniversary">Anniversary</option>
                     <option value="birthday">Birthday</option>
@@ -32,7 +30,7 @@ render:function(){
 
             <br></br> 
             <label>Serving Size:</label>
-              <select ref="servingSize" selected={this.props.fieldValues.servingSize}>
+              <select ref="servingSize" >
                     <option value="null"></option>
                     <option value="10">10-20</option>
                     <option value="20">20-30</option>
@@ -43,7 +41,7 @@ render:function(){
 
             <br></br> 
             <label>Cake Shape</label>
-              <select ref="cakeShape" selected={this.props.fieldValues.cakeShape}>
+              <select ref="cakeShape" >
                     <option value="null"></option>
                     <option value="sheet">Sheet Cake</option>
                     <option value="round">Round Cake</option>
@@ -51,7 +49,7 @@ render:function(){
             
             <br></br> 
             <label>Cake Type</label>
-              <select ref="cakeType" selected={this.props.fieldValues.cakeType}>
+              <select ref="cakeType" >
                     <option value="null"></option>
                     <option value="chocolate">Chocolate Cake</option>
                     <option value="white">Classic Ivory Cake</option>
@@ -63,7 +61,7 @@ render:function(){
           
             <br></br> 
             <label>Filling</label>
-                <select ref="filling" selected={this.props.fieldValues.filling}>
+                <select ref="filling" >
                   <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
@@ -78,7 +76,7 @@ render:function(){
 
           <br></br> 
           <label>Frosting</label>
-                <select ref="frosting" selected={this.props.fieldValues.frosting}>
+                <select ref="frosting" >
                   <option value="null"></option>
                   <option value="chocolateBC">Chocolate Buttercream</option>
                   <option value="vanillaBC">Vanilla Buttercream</option>
@@ -90,7 +88,7 @@ render:function(){
 
           <br></br> 
           <label>Decoration</label>
-                <select ref="decoration" selected={this.props.fieldValues.decoration}>
+                <select ref="decoration" >
                     <option value="null"></option>
                     <option value="floral">Floral Design</option>
                     <option value="streamers">Confetti and Streamers</option>
@@ -101,7 +99,7 @@ render:function(){
                 </select>
             
           <br></br>     
-          <button onClick={this.saveAndContinue}>Save and Continue</button>
+          <Link to='CustomCakeForm/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
 
         </form>
       </div>
@@ -124,7 +122,6 @@ saveAndCountinue:function(e){
 
     this.props.saveValues(data)
     
-    this.props.nextStep()
 
 
   }
