@@ -99,8 +99,8 @@ render:function(){
                 </select>
             
           <br></br>     
-          <Link to='CustomCakeForm/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
-
+          <Link to='/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
+          
         </form>
       </div>
 )},
