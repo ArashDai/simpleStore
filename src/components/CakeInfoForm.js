@@ -1,7 +1,7 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
-
+var CakeSelections = require('./CakeSelections');
 
 
 var CakeInfoForm = React.createClass({
@@ -102,6 +102,9 @@ render:function(){
           <Link to='/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
           
         </form>
+        <br></br>
+        <CakeSelections/>
+
       </div>
 )},
   

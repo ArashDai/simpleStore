@@ -1,6 +1,7 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
+var CakeSelections = require('./CakeSelections');
 var CakeInfoForm = require('./CakeInfoForm');
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
