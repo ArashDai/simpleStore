@@ -1,2 +1,3 @@
 node_modules
-assets
+client/assets
+client/build/bundle.js
