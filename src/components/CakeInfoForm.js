@@ -102,8 +102,7 @@ render:function(){
           <Link to='/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
           
         </form>
-        <br></br>
-        <CakeSelections/>
+        
 
       </div>
 )},
