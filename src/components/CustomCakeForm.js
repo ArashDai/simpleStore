@@ -6,10 +6,10 @@ var CakeInfoForm = require('./CakeInfoForm');
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
 var fieldValues = {
-      dateTime:null,
-      eventType:null,
+      dateTime:'test',
+      eventType:'null',
       servings:null,
-      cakeShape:null,
+      cakeShape:'monkey',
       cakeType:null,
       fillingType:null,
       frostingType:null,
@@ -38,7 +38,7 @@ var CustomCakeForm = React.createClass({
       </div>
       <br></br>
 
-      <CakeSelections/>
+      <CakeSelections fieldValues={fieldValues} />
       
 
      </div>
