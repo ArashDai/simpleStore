@@ -7,7 +7,7 @@ var CakeDescriptionForm = require('./CakeDescriptionForm');
 
 var fieldValues = {
       dateTime:'test',
-      eventType:'null',
+      eventType:null,
       servings:null,
       cakeShape:'monkey',
       cakeType:null,
