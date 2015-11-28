@@ -5,20 +5,35 @@ var CakeSelections = require('./CakeSelections');
 var CakeInfoForm = require('./CakeInfoForm');
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
-var fieldValues = {
-      dateTime:'test',
+// var fieldValues = {
+//       dateTime:'test',
+//       eventType:null,
+//       servings:null,
+//       cakeShape:'monkey',
+//       cakeType:null,
+//       fillingType:null,
+//       frostingType:null,
+//       decoration:null 
+//   }
+//fieldValues={fieldValues}
+
+
+var CustomCakeForm = React.createClass({
+
+  getInitialState:function(){
+    return{
+      dateTime:null,
       eventType:null,
       servings:null,
-      cakeShape:'monkey',
+      cakeShape:null,
       cakeType:null,
       fillingType:null,
       frostingType:null,
       decoration:null 
-  }
 
+    }
 
-
-var CustomCakeForm = React.createClass({
+  },
 
   saveValues: function(fields) {
     return function() {
@@ -36,9 +51,10 @@ var CustomCakeForm = React.createClass({
       <div className='container-fluid'>
             {this.props.children}
       </div>
+
       <br></br>
 
-      <CakeSelections fieldValues={fieldValues} />
+      <CakeSelections />
       
 
      </div>

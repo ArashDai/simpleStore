@@ -23,13 +23,13 @@ var CakeSelections = React.createClass({
 
       <div>
         
-        <p>Date and Time: {this.props.fieldValues.dateTime}</p>
-        <p>Servings Size: {this.props.fieldValues.servings}</p>
-        <p>Cake Shape:    {this.props.fieldValues.cakeShape}</p>
-        <p>Cake Type:     {this.props.fieldValues.cakeType}</p>
-        <p>Filling:       {this.props.fieldValues.fillingType}</p>
-        <p>Frosting:      {this.props.fieldValues.frostingType}</p>
-        <p>Decoration:    {this.props.fieldValues.decoration}</p>
+        <p>Date and Time: {this.state.fieldValues.dateTime}</p>
+        <p>Servings Size: {this.state.fieldValues.servings}</p>
+        <p>Cake Shape:    {this.state.fieldValues.cakeShape}</p>
+        <p>Cake Type:     {this.state.fieldValues.cakeType}</p>
+        <p>Filling:       {this.state.fieldValues.fillingType}</p>
+        <p>Frosting:      {this.state.fieldValues.frostingType}</p>
+        <p>Decoration:    {this.state.fieldValues.decoration}</p>
 
       </div>
       
