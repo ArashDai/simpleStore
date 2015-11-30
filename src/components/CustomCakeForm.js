@@ -5,31 +5,20 @@ var CakeSelections = require('./CakeSelections');
 var CakeInfoForm = require('./CakeInfoForm');
 var CakeDescriptionForm = require('./CakeDescriptionForm');
 
-// var fieldValues = {
-//       dateTime:'test',
-//       eventType:null,
-//       servings:null,
-//       cakeShape:'monkey',
-//       cakeType:null,
-//       fillingType:null,
-//       frostingType:null,
-//       decoration:null 
-//   }
-//fieldValues={fieldValues}
-
 
 var CustomCakeForm = React.createClass({
 
   getInitialState:function(){
+
     return{
-      dateTime:null,
-      eventType:null,
-      servings:null,
-      cakeShape:null,
-      cakeType:null,
-      fillingType:null,
-      frostingType:null,
-      decoration:null 
+      dateTime:'',
+      eventType:'',
+      servings:'',
+      cakeShape:'',
+      cakeType:'',
+      fillingType:'',
+      frostingType:'',
+      decoration:''
 
     }
 
@@ -64,11 +53,4 @@ var CustomCakeForm = React.createClass({
 
 
 module.exports = CustomCakeForm;
-
-
-
- // <CakeInfoForm        fieldValues={fieldValues}
- //                                    nextStep={this.nextStep}
- //                                    saveValues={this.saveValues}/>
-
 

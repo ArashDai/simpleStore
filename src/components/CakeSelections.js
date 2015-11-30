@@ -6,7 +6,9 @@ var React = require('react');
 var CakeSelections = React.createClass({
 
   getInitialState:function(){
+    
     return{
+      
       dateTime:this.props.fieldValues.dateTime,
       eventType:this.props.fieldValues.eventType,
       servings:this.props.fieldValues.servings,
@@ -15,6 +17,7 @@ var CakeSelections = React.createClass({
       fillingType:this.props.fieldValues.fillingType,
       frostingType:this.props.fieldValues.frostingType,
       decoration:this.props.fieldValues.decoration
+      
     }
   },
 
@@ -29,14 +32,15 @@ var CakeSelections = React.createClass({
       frostingType:this.props.fieldValues.frostingType,
       decoration:this.props.fieldValues.decoration
       })
-  }
+  },
 
 
   render:function(){
+  
     return(
 
       <div>
-        
+
         <p>Date and Time: {this.state.dateTime}</p>
         <p>Servings Size: {this.state.servings}</p>
         <p>Cake Shape:    {this.state.cakeShape}</p>

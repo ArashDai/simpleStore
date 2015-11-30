@@ -8,20 +8,19 @@ var CakeInfoForm = React.createClass({
 
   getInitialState:function(){
       return{
-        dateTime:null,
-        eventType:null,
-        servings:null,
-        cakeShape:null,
-        cakeType:null,
-        fillingType:null,
-        frostingType:null,
-        decoration:null 
+        dateTime:'',
+        eventType:'',
+        servings:'',
+        cakeShape:'',
+        cakeType:'',
+        fillingType:'',
+        frostingType:'',
+        decoration:'' 
       }
-    }, 
+  }, 
 
   saveAndContinue:function(e){
-     // e.preventDefault()
-
+    
       var data = { 
         dateTime    : e.target.form[0].value,
         eventType   : e.target.form[1].value,
@@ -35,7 +34,7 @@ var CakeInfoForm = React.createClass({
 
       this.props.saveValues(data)   
 
-    },   
+  },   
 
 
   render:function(){
@@ -51,7 +50,7 @@ var CakeInfoForm = React.createClass({
               <br></br>      
               <label>Event Type:</label>
                     <select ref="eventType" >
-                      <option value="null"></option>
+                      <option value=""></option>
                       <option value="anniversary">Anniversary</option>
                       <option value="birthday">Birthday</option>
                       <option value="graduation">Graduation</option>
@@ -62,7 +61,7 @@ var CakeInfoForm = React.createClass({
               <br></br> 
               <label>Serving Size:</label>
                 <select ref="servingSize" >
-                      <option value="null"></option>
+                      <option value=""></option>
                       <option value="10">10-20</option>
                       <option value="20">20-30</option>
                       <option value="30">30-40</option>
@@ -73,7 +72,7 @@ var CakeInfoForm = React.createClass({
               <br></br> 
               <label>Cake Shape</label>
                 <select ref="cakeShape" >
-                      <option value="null"></option>
+                      <option value=""></option>
                       <option value="sheet">Sheet Cake</option>
                       <option value="round">Round Cake</option>
                 </select>
@@ -81,7 +80,7 @@ var CakeInfoForm = React.createClass({
               <br></br> 
               <label>Cake Type</label>
                 <select ref="cakeType" >
-                      <option value="null"></option>
+                      <option value=""></option>
                       <option value="chocolate">Chocolate Cake</option>
                       <option value="white">Classic Ivory Cake</option>
                       <option value="banana">Banana Cake*</option>
@@ -93,7 +92,7 @@ var CakeInfoForm = React.createClass({
               <br></br> 
               <label>Filling</label>
                   <select ref="filling" >
-                    <option value="null"></option>
+                    <option value=""></option>
                     <option value="chocolateBC">Chocolate Buttercream</option>
                     <option value="vanillaBC">Vanilla Buttercream</option>
                     <option value="mochaBC">Mocha Buttercream</option>
@@ -108,7 +107,7 @@ var CakeInfoForm = React.createClass({
             <br></br> 
             <label>Frosting</label>
                   <select ref="frosting" >
-                    <option value="null"></option>
+                    <option value=""></option>
                     <option value="chocolateBC">Chocolate Buttercream</option>
                     <option value="vanillaBC">Vanilla Buttercream</option>
                     <option value="mochaBC">Mocha Buttercream</option>
@@ -120,7 +119,7 @@ var CakeInfoForm = React.createClass({
             <br></br> 
             <label>Decoration</label>
                   <select ref="decoration" >
-                      <option value="null"></option>
+                      <option value=""></option>
                       <option value="floral">Floral Design</option>
                       <option value="streamers">Confetti and Streamers</option>
                       <option value="photo">Photo Cake</option>
@@ -130,7 +129,10 @@ var CakeInfoForm = React.createClass({
                   </select>
               
             <br></br>     
-            <Link to='/CakeDescriptionForm'><button onClick={this.saveAndContinue}>Save and Continue</button></Link>
+            
+            <Link to='/CakeDescriptionForm'>
+              <button onClick={this.saveAndContinue}>Save and Continue</button>
+            </Link>
             
           </form>
           
@@ -142,6 +144,3 @@ var CakeInfoForm = React.createClass({
 
 
 module.exports = CakeInfoForm;
-
-
-// this.props.saveValues(data)
