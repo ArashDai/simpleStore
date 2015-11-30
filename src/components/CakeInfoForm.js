@@ -19,24 +19,21 @@ var CakeInfoForm = React.createClass({
       }
     }, 
 
-  saveAndCountinue:function(e){
-      e.preventDefault()
+  saveAndContinue:function(e){
+     // e.preventDefault()
 
       var data = { 
-        dateTime    : this.refs.dateTime.getDOMNode().value,
-        eventType   : this.refs.eventType.getDOMNode().value,
-        servings    : this.refs.servingSize.getDOMNode().value,
-        cakeShape   : this.refs.cakeShape.getDOMNode().value,
-        cakeType    : this.refs.cakeType.getDOMNode().value,
-        fillingType : this.refs.filling.getDOMNode().value,
-        frostingType: this.refs.frosting.getDOMNode().value,
-        decoration  : this.refs.decoration.getDOMNode().value
+        dateTime    : e.target.form[0].value,
+        eventType   : e.target.form[1].value,
+        servings    : e.target.form[2].value,
+        cakeShape   : e.target.form[3].value,
+        cakeType    : e.target.form[4].value,
+        fillingType : e.target.form[5].value,
+        frostingType: e.target.form[6].value,
+        decoration  : e.target.form[7].value
       }
 
-
-      this.props.saveValues(data)      
-      this.setState(data)
-
+      this.props.saveValues(data)   
 
     },   
 

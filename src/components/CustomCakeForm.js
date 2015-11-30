@@ -36,10 +36,9 @@ var CustomCakeForm = React.createClass({
   },
 
   saveValues: function(fields) {
-    return function() {
-      this.fieldValues = Object.assign({}, fieldValues, fields)
+   
+      this.setState(fields)
 
-    }
   },
   
   render: function() {
@@ -49,12 +48,12 @@ var CustomCakeForm = React.createClass({
         <p className='text-center'>The perfect cake awaits</p>
       
       <div className='container-fluid'>
-            {this.props.children}
+            {this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
       </div>
 
       <br></br>
 
-      <CakeSelections />
+      <CakeSelections fieldValues={this.state}/>
       
 
      </div>
