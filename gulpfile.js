@@ -21,13 +21,14 @@ gulp.task('watch',function(){
   );
   return watchJS.on('update',function(){
     watchJS.bundle()
+    .on('error', function(err) { console.log('Error updating bundle'); })
     .pipe(source('bundle.js'))
-    .pipe(gulp.dest('./client/build'))
+    .pipe(gulp.dest('./client/build'));
     console.log('updated at ' + (Date.now() - start) + ' ms ago');
   })
   .bundle()
   .pipe(source('bundle.js'))
-  .pipe(gulp.dest('./client/build'))
+  .pipe(gulp.dest('./client/build'));
 
 });
 

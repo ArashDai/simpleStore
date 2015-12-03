@@ -11,6 +11,7 @@ var CustomCakeForm = React.createClass({
   getInitialState:function(){
 
     return{
+
       dateTime:'',
       eventType:'',
       servings:'',
@@ -25,7 +26,7 @@ var CustomCakeForm = React.createClass({
   },
 
   saveValues: function(fields) {
-   
+   //try using object.asign here
       this.setState(fields)
 
   },
@@ -37,9 +38,9 @@ var CustomCakeForm = React.createClass({
         <p className='text-center'>The perfect cake awaits</p>
       
       <div className='container-fluid'>
-            {this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
-      </div>
-
+        {this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
+      </div> 
+       
       <br></br>
 
       <CakeSelections fieldValues={this.state}/>
@@ -53,4 +54,7 @@ var CustomCakeForm = React.createClass({
 
 
 module.exports = CustomCakeForm;
+
+
+//{this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
 

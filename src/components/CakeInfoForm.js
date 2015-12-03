@@ -1,7 +1,6 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
-var CakeSelections = require('./CakeSelections');
 
 
 var CakeInfoForm = React.createClass({
@@ -32,7 +31,7 @@ var CakeInfoForm = React.createClass({
         decoration  : e.target.form[7].value
       }
 
-      this.props.saveValues(data)   
+      this.props.saveValues(data);   
 
   },   
 
