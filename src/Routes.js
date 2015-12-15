@@ -15,16 +15,19 @@ var Routes = (
       <IndexRoute component={require("./components/MainBody")}/>
 
       <Route path="/gallery" component={require("./components/Gallery")} />
-      <Route path="/BreadMenu" component={require("./components/BreadMenu")} />
-      <Route path="/BreakfastMenu" component={require("./components/BreakfastMenu")} />
-      <Route path="/CakeMenu" component={require("./components/CakeMenu")} />
-      <Route path="/LunchMenu" component={require("./components/LunchMenu")} />
-      <Route path="/PastryMenu" component={require("./components/PastryMenu")} />
+      <Route path="/breadmenu" component={require("./components/BreadMenu")} />
+      <Route path="/breakfastmenu" component={require("./components/BreakfastMenu")} />
+      <Route path="/cakemenu" component={require("./components/CakeMenu")} />
+      <Route path="/lunchmenu" component={require("./components/LunchMenu")} />
+      <Route path="/pastrymenu" component={require("./components/PastryMenu")} />
       
-      <Route path='/CustomCakeForm' component={require("./components/CustomCakeForm")} >
-        <IndexRoute component={require("./components/CakeInfoForm")} />
+      <Route path='/customcakeform' component={require("./components/CustomCakeForm")} >
+        <IndexRoute component={require("./components/CustomCakeInfoForm")} />
 
-        <Route path="/CakeDescriptionForm" component={require("./components/CakeDescriptionForm")} />
+        <Route path="/customcakedescriptionform" component={require("./components/CustomCakeDescriptionForm")} />
+        <Route path="/customcakeconfirmationone" component={require("./components/CustomCakeConfirmationOne")} />
+        <Route path="/customcakeuserinfo" component={require("./components/CustomCakeUserInfo")} />
+
       </Route>  
 
 

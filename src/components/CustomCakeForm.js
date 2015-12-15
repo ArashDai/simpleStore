@@ -1,9 +1,9 @@
 var React =  require('react');
 var Link = require('react-router').Link;
 
-var CakeSelections = require('./CakeSelections');
-var CakeInfoForm = require('./CakeInfoForm');
-var CakeDescriptionForm = require('./CakeDescriptionForm');
+var CustomCakeSelections = require('./CustomCakeSelections');
+var CustomCakeInfoForm = require('./CustomCakeInfoForm');
+var CustomCakeDescriptionForm = require('./CustomCakeDescriptionForm');
 
 
 var CustomCakeForm = React.createClass({
@@ -19,15 +19,17 @@ var CustomCakeForm = React.createClass({
       cakeType:'',
       fillingType:'',
       frostingType:'',
-      decoration:''
+      decoration:'',
+      decorationDesc:'',
+      userInfo:undefined
 
     }
 
   },
 
   saveValues: function(fields) {
-   //try using object.asign here
-      this.setState(fields)
+
+      this.setState(fields);
 
   },
   
@@ -38,12 +40,12 @@ var CustomCakeForm = React.createClass({
         <p className='text-center'>The perfect cake awaits</p>
       
       <div className='container-fluid'>
-        {this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
+        {this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues, fieldValues:this.state})}
       </div> 
        
       <br></br>
 
-      <CakeSelections fieldValues={this.state}/>
+      <CustomCakeSelections fieldValues={this.state}/>
       
 
      </div>
@@ -55,6 +57,4 @@ var CustomCakeForm = React.createClass({
 
 module.exports = CustomCakeForm;
 
-
-//{this.props.children && React.cloneElement(this.props.children,{saveValues:this.saveValues})}
 

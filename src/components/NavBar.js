@@ -33,7 +33,7 @@ var NavBar = React.createClass({
               </Link>  
 
               <div id="navbar" className="navbar-collapse collapse">
-                <ul className="nav navbar-nav" aria-expanded="false">
+                <ul className="nav navbar-nav text-center" aria-expanded="false">
                   <li><Link to="/CakeMenu">Cakes</Link></li>
                   <li><Link to="/PastryMenu">Pastries</Link></li>
                   <li><Link to="/BreadMenu">Breads</Link></li>
@@ -42,7 +42,7 @@ var NavBar = React.createClass({
                 </ul>
                 
 
-                <ul className="nav navbar-nav navbar-right">
+                <ul className="nav navbar-nav navbar-right text-center">
                   <li><a href="">Login</a></li>
                   <li><a href="">Shopping Cart</a></li>
                 </ul>
