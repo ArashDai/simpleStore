@@ -15,7 +15,9 @@ var CustomCakeInfoForm = React.createClass({
         fillingType:'',
         frostingType:'',
         decoration:'',
-        decorationDesc:'' 
+        decorationDesc:'',
+        userInfo:undefined
+
       }
   }, 
 
@@ -45,12 +47,12 @@ var CustomCakeInfoForm = React.createClass({
           <form className='col-xs-12'>
             
               <label>Pickup date and time:</label> 
-                    <input type='datetime-local' ref='dateTime' />
+                    <input type='datetime-local' ref='dateTime' onChange={this.saveAndContinue}/>
 
 
               <br></br>      
               <label>Event Type:</label>
-                    <select ref="eventType" >
+                    <select ref="eventType" onChange={this.saveAndContinue} >
                       <option value=""></option>
                       <option value="anniversary">Anniversary</option>
                       <option value="birthday">Birthday</option>
@@ -61,7 +63,7 @@ var CustomCakeInfoForm = React.createClass({
 
               <br></br> 
               <label>Serving Size:</label>
-                <select ref="servingSize" >
+                <select ref="servingSize" onChange={this.saveAndContinue}>
                       <option value=""></option>
                       <option value="10">10-20</option>
                       <option value="20">20-30</option>
@@ -72,7 +74,7 @@ var CustomCakeInfoForm = React.createClass({
 
               <br></br> 
               <label>Cake Shape</label>
-                <select ref="cakeShape" >
+                <select ref="cakeShape" onChange={this.saveAndContinue}>
                       <option value=""></option>
                       <option value="Sheet Cake">Sheet Cake</option>
                       <option value="Round Cake">Round Cake</option>
@@ -80,7 +82,7 @@ var CustomCakeInfoForm = React.createClass({
               
               <br></br> 
               <label>Cake Type</label>
-                <select ref="cakeType" >
+                <select ref="cakeType" onChange={this.saveAndContinue}>
                       <option value=""></option>
                       <option value="Chocolate Cake">Chocolate Cake</option>
                       <option value="Classic Ivory Cake">Classic Ivory Cake</option>
@@ -92,7 +94,7 @@ var CustomCakeInfoForm = React.createClass({
             
               <br></br> 
               <label>Filling</label>
-                  <select ref="filling" >
+                  <select ref="filling" onChange={this.saveAndContinue}>
                     <option value=""></option>
                     <option value="Chocolate Buttercream">Chocolate Buttercream</option>
                     <option value="Vanilla Buttercream">Vanilla Buttercream</option>
@@ -107,7 +109,7 @@ var CustomCakeInfoForm = React.createClass({
 
             <br></br> 
             <label>Frosting</label>
-                  <select ref="frosting" >
+                  <select ref="frosting" onChange={this.saveAndContinue} >
                     <option value=""></option>
                     <option value="Chocolate Buttercream">Chocolate Buttercream</option>
                     <option value="Vanilla Buttercream">Vanilla Buttercream</option>
@@ -119,7 +121,7 @@ var CustomCakeInfoForm = React.createClass({
 
             <br></br> 
             <label>Decoration</label>
-                  <select ref="decoration" >
+                  <select ref="decoration" onChange={this.saveAndContinue} >
                       <option value=""></option>
                       <option value="Floral">Floral Design</option>
                       <option value="Confetti and Streamers">Confetti and Streamers</option>
@@ -132,7 +134,7 @@ var CustomCakeInfoForm = React.createClass({
             <br></br>     
             
             <Link to='/CustomCakeDescriptionForm'>
-              <button onClick={this.saveAndContinue}>Save and Continue</button>
+              <button>Save and Continue</button>
             </Link>
             
           </form>
