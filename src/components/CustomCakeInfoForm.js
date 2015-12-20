@@ -10,7 +10,6 @@ var CustomCakeInfoForm = React.createClass({
         dateTime:'',
         eventType:'',
         servings:'',
-        cakeShape:'',
         cakeType:'',
         fillingType:'',
         frostingType:'',
@@ -27,11 +26,10 @@ var CustomCakeInfoForm = React.createClass({
         dateTime       : e.target.form[0].value,
         eventType      : e.target.form[1].value,
         servings       : e.target.form[2].value,
-        cakeShape      : e.target.form[3].value,
-        cakeType       : e.target.form[4].value,
-        fillingType    : e.target.form[5].value,
-        frostingType   : e.target.form[6].value,
-        decoration     : e.target.form[7].value,
+        cakeType       : e.target.form[3].value,
+        fillingType    : e.target.form[4].value,
+        frostingType   : e.target.form[5].value,
+        decoration     : e.target.form[6].value,
         decorationDesc :''
       }
 
@@ -62,22 +60,20 @@ var CustomCakeInfoForm = React.createClass({
                     </select>
 
               <br></br> 
-              <label>Serving Size:</label>
+              <label>Cake Size and Shape:</label>
                 <select ref="servingSize" onChange={this.saveAndContinue}>
                       <option value=""></option>
-                      <option value="10">10-20</option>
-                      <option value="20">20-30</option>
-                      <option value="30">30-40</option>
-                      <option value="40">40-50</option>
-                      <option value="50">50-60</option>
-                </select>
-
-              <br></br> 
-              <label>Cake Shape</label>
-                <select ref="cakeShape" onChange={this.saveAndContinue}>
-                      <option value=""></option>
-                      <option value="Sheet Cake">Sheet Cake</option>
-                      <option value="Round Cake">Round Cake</option>
+                      <option value="1/4 Sheet">1/4 Sheet, Serves: 10-16</option>
+                      <option value="1/2 Sheet">1/2 Sheet, Serves: 30-36</option>
+                      <option value="3/4 Sheet">3/4 Sheet, Serves: 45-55</option>
+                      <option value="FullSheet">FullSheet, Serves: 70-80</option>
+                      <option value="3 Layer FullSheet">3 Layer FullSheet, Serves: 100-110</option>
+                      <option value="8in Round">8 in Round, Serves: 10-12</option>
+                      <option value="10in Round">10 in Round, Serves: 20-25</option>
+                      <option value="12in Round">12 in Round, Serves: 30-36</option>
+                      <option value="14in Round">14 in Round, Serves: 45-55</option>
+                      <option value="16in Round">16 in Round, Serves: 78-85</option>
+                      
                 </select>
               
               <br></br> 

@@ -15,27 +15,22 @@ var MainBody = React.createClass({
     return(
     <div id="mainBodyDom">
       <div className='col-md-offset-1 col-md-10'>
-        <Intro/>
-      </div>
-      <br></br>
-
-      <div className='col-md-offset-1 col-md-10'>
-        <CakeIntro/>
-        <Cakes/>
-          <br></br>
-        <FoodIntro/> 
-        <Food/>
-          <br></br>
-        <BakedIntro/>
-        <Baked/>
-          <br></br> 
-        <EventIntro/>  
-        <Event/>  
-          <br></br>
-      </div>
-      
-    
-    </div>  
+      <Intro/>
+        <br></br>
+      <CakeIntro/>
+      <Cakes/>
+        <br></br>
+      <FoodIntro/> 
+      <Food/>
+        <br></br>
+      <BakedIntro/>
+      <Baked/>
+        <br></br> 
+      <EventIntro/>  
+      <Event/>  
+        <br></br>
+    </div>
+  </div>  
 
     )
 

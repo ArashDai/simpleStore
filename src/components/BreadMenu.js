@@ -4,10 +4,10 @@ var React =  require('react');
 var BreadMenu = React.createClass({
   render:function(){
     return(
-      <div>
-        <h1>Bread Menu</h1>
+      <div id='card' className='container-fluid'>
+        <h1 className='text-center'>Bread Menu</h1>
 
-        <div id='foodmenu'>
+        <div>
           <h1>Sandwiches</h1>
             <ul>
                <li>

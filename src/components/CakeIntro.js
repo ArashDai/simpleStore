@@ -9,7 +9,7 @@ var CakeIntro= React.createClass({
        <div className='row'> 
        <p id='cakeTitle' className = 'text-center'>Cakes</p>
 
-       <Link to="/CakeMenu" id='cakeButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9" role="button">Cake Menu</Link>
+       <Link to="/cakemenu" id='cakeButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-9" role="button">Cake Menu</Link>
        </div>
 
 

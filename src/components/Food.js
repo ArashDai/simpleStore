@@ -7,22 +7,20 @@ var Food = React.createClass({
       <div id="card" className="container-fluid">
           
             <div id="breakfastButton" className="col-xs-6 col-sm-3 col-sm-offset-2 visible-xs visible-sm">
-                <a>
+                <Link to='/breakfastmenu'>
                   <img src="./assets/sandwich2.jpg" className="col-xs-12 img-circle"/>
-                </a>
+                </Link>
                 <p className='text-center'>Breakfast</p>
             </div>
          
             <div id="lunchButton" className="col-xs-6 col-sm-3 col-sm-push-2 visible-xs visible-sm">
-                <a>
+                <Link to='/lunchmenu'>
                   <img src="./assets/sandwich2.jpg" className="col-xs-12 img-circle"/>
-                </a>
+                </Link>
                 <p className='text-center'>Lunch</p>
             </div>
           <br></br>
-
-
-
+          
       </div>
 
       )

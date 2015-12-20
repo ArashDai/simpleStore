@@ -9,7 +9,8 @@
   width:95%;   
 }
 
-#mainbodyDom{
+#mainbody{
+  margin-top: 14em;
 
 }
 
@@ -22,12 +23,14 @@
 }
 
 #logo{
+  margin-top: 0px;
+  padding: 0px;
   min-height: 5em;
   max-height: 6em;
 }
 
-#navbar{
-  padding-top:2em;
+#myNav{
+  height:10em;
 }
 
 #navbarDom {

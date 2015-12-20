@@ -5,7 +5,7 @@ var Header = React.createClass({
   render: function(){
     return (
 
-      <div>
+      <div className='container-fluid text-center'>
         <NavBar/>
       </div>
 

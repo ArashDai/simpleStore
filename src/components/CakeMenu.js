@@ -304,7 +304,7 @@ var CakeMenu = React.createClass({
        
        
           <br></br>
-          <p>Not finding what youre looking for? Lets make something special for you <Link> custom cake form</Link> </p>
+          <p>Not finding what youre looking for? Lets make something special for you  </p>
 
       </div>
       )}

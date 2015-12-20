@@ -15,7 +15,6 @@ var CustomCakeForm = React.createClass({
       dateTime:'',
       eventType:'',
       servings:'',
-      cakeShape:'',
       cakeType:'',
       fillingType:'',
       frostingType:'',
@@ -28,32 +27,7 @@ var CustomCakeForm = React.createClass({
   },
   
   calculatePrice:function(){
-    var total = 0;
-
-    if(cakeShape === 'sheet'){
-      if(servings === 10){
-        console.log('1/4 sheet');
-      }
-        else if(servings === 20){
-        console.log('1/2 sheet');
-      }
-        else if(servings === 30){
-        console.log('1/2 sheet');
-      }
-        else if(servings === 40){
-        console.log('3/4 sheet')
-      }
-        else if(servings === 50){
-        console.log('full sheet')
-      }
-        else if(servings === 60){
-        console.log('3 layer full sheet')
-      }
-
-  }    
-    if(cakeShape === 'round'){
-
-    }
+   
 
   },
 

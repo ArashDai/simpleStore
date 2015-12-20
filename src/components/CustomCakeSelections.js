@@ -10,7 +10,7 @@ var CustomCakeSelections = React.createClass({
       <div className='text-center'>
 
         <p>Date and Time: {this.props.fieldValues.dateTime}</p>
-        <p>Servings Size: {this.props.fieldValues.servings}</p>
+        <p>Size:          {this.props.fieldValues.servings}</p>
         <p>Cake Shape:    {this.props.fieldValues.cakeShape}</p>
         <p>Cake Type:     {this.props.fieldValues.cakeType}</p>
         <p>Filling:       {this.props.fieldValues.fillingType}</p>

@@ -9,6 +9,9 @@ app.use(express.static('client'));
 
 app.use(bodyParser.json());
 
+
+
+
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -18,14 +21,18 @@ var transporter = nodemailer.createTransport({
 });
 
 
-
 app.post('/userData',function (request,response){
   response.send(console.log(request.body));
 
   var textCreator = function(data){
-  var text = 'A cake order has been received for the date of : ' + data.body.dateTime + ' cake details:a ' + data.body.cakeType + ' ' + data.body.cakeShape + ' ' + data.body.servings + ' with ' + data.body.fillingType + ' and ' + data.body.frostingType + 'decoration : ' + data.body.decoration + ' ' + data.body.decorationDesc + ' ' +data.body.userInfo;
+  var orderText =   'Date : ' + data.body.dateTime +'\n'+
+                    'Cake Type: ' + data.body.cakeType +'\n'+
+                    'Cake Size: ' + data.body.servings +'\n'+
+                    'Filling: ' + data.body.fillingType +'\n'+
+                    'Frosting: ' + data.body.frostingType +'\n'+
+                    'Decoration : ' + data.body.decoration + ' ' + data.body.decorationDesc + ' ' +data.body.userInfo+'\n';
 
-  return text;
+  return orderText;
   }
   var finalText = textCreator(request)
 

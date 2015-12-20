@@ -15,13 +15,12 @@ var App = React.createClass({
 
           <Header/>  
 
-          <div className='container-fluid'>
+          <div id='mainbody'className='container-fluid'>
             {this.props.children}
           </div>
            <br></br>
           <Footer/>
           
-
       </div>
       
       )
@@ -31,6 +30,3 @@ var App = React.createClass({
 
 module.exports = App;
 
-
-// {this.props.children}
-// {React.cloneElement(this.props.children)}
