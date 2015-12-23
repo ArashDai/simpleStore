@@ -17,14 +17,14 @@ var Routes = (
       <Route path="/pastrymenu" component={require("./components/PastryMenu")} />
       
       <Route path='/customcakeform' component={require("./components/CustomCakeForm")} >
+        
         <IndexRoute component={require("./components/CustomCakeInfoForm")} />
 
         <Route path="/customcakedescriptionform" component={require("./components/CustomCakeDescriptionForm")} />
         <Route path="/customcakeconfirmationone" component={require("./components/CustomCakeConfirmationOne")} />
         <Route path="/customcakeuserinfo" component={require("./components/CustomCakeUserInfo")} />
-
+        <Route path="/finalconfirmation" component={require("./components/CustomCakeFinalConfirmation")} />
       </Route>  
-
 
     </Route>
 

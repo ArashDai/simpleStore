@@ -21,7 +21,6 @@ var CustomCakeConfirmationOne = React.createClass({
   },
 
   render:function(){
-    console.log(this.props.fieldValues);
 
     return(
       <div className='text-center'>
@@ -45,9 +44,9 @@ var CustomCakeConfirmationOne = React.createClass({
           </p>
         </div>
 
-        
-        <button onClick={this.sendInformation} >Submit</button>
-
+        <Link to='/finalconfirmation'>
+          <button onClick={this.sendInformation} >Submit</button>
+        </Link>
       </div>
       );
   }

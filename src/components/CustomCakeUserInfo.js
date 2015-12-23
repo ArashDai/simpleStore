@@ -47,14 +47,13 @@ var CustomCakeUserInfo = React.createClass({
     console.log(userData);
     this.props.saveValues(data);   
     console.log(this.props.fieldValues);
-    console.log('hey')
   },
 
   render:function(){
   
     return(
 
-      <div>
+      <div className='container-fluid text-center'>
         
         <h3>Customer Information</h3>
 
@@ -64,9 +63,10 @@ var CustomCakeUserInfo = React.createClass({
           <p>Birthday</p>     <input type='date' ref='userBday' />
           <p>Phone Number</p> <input type="text" required />
           <p>Email</p>        <input type="email" required />
+          <br></br>
           
           <Link to='/customcakeconfirmationone'>
-            <button onClick={this.saveAndContinue}> Submit </button>
+            <button className='text-center col-sm-offset-6' onClick={this.saveAndContinue}> Submit </button>
           </Link>
         </form>
 

@@ -10,5 +10,3 @@ var Routes = require('./Routes.js');
 
 ReactDom.render(<Router onUpdate={() => window.scrollTo(0, 0)} history={history} routes={Routes}/> ,document.getElementById('main'));
 
-
-//that onUpdate scrolls the page up on route changes

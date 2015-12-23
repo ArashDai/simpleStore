@@ -3,6 +3,7 @@ var Link = require('react-router').Link;
 
 
 var CustomCakeDescriptionForm = React.createClass({
+  
   getInitialState:function(){
       return{
         dateTime:      this.props.fieldValues.dateTime,
@@ -49,13 +50,13 @@ var CustomCakeDescriptionForm = React.createClass({
 
           <textarea className='text-center col-xs-12 col-md-6 col-md-offset-3' id='cakeDescInput' ref='decorationDesc' type="text" />
 
-          <h3>Upload Images</h3>
+          <h3 className='text-center'>Upload Images</h3>
           
-          <p>
+          <p className='text-center'>
             Upload images related to the cake design, photocake images or example cakes
           </p>
 
-          <Link className='text-center col-sm-offset-6' to='/customcakeuserinfo'>
+          <Link className='text-center col-sm-offset-8' to='/customcakeuserinfo'>
             <button onClick={this.saveAndContinue}>Save and Continue</button>
           </Link>
 

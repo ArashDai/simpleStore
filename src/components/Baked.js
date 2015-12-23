@@ -6,9 +6,11 @@ var Baked = React.createClass({
     return(
       <div id="card" className="container-fluid">
           
-            <div id="cakeBlurb" className="col-xs-12 col-sm-10 col-sm-offset-1">
-            Lorem ipsum dolor sit amet, mauris tincidunt tellus nisl mattis luctus, tempor nullam, et aenean congue, nullam aliquam, at ante. Vivamus suspendisse ut nec proin in et, cursus eu taciti vitae cum, facilisis nascetur libero platea vitae libero, sodales lacinia non turpis eu wisi, vestibulum aenean habitant aliquam vestibulum maecenas. Ultrices ullam metus ante, congue eos dui condimentum dui turpis in, vulputate donec ad aliquam eget massa pede. 
-            </div>
+            <h3 className='text-center'> So many pastries to choose from! </h3>
+
+            <p id="font" className="text-center">
+             Danishes, Muffins, Cookies and More 
+            </p>
 
             <div  className="col-xs-6 col-sm-3 col-sm-offset-2 visible-xs visible-sm">
                 <Link to="/PastryMenu">

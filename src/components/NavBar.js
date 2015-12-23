@@ -7,21 +7,21 @@ var NavBar = React.createClass({
   render:function(){
     return(
 
-          <nav className="navbar navbar-default navbar-fixed-top container-fluid text-center">
+          <nav className="navbar navbar-default navbar-static-top container-fluid text-center">
         
-            <Link to="/" className='row'>
+            <Link to="/" className='row' id='logo'>
               <img className="center-block" id='logo' src="./assets/newbakerylogo.png" />
             </Link>  
 
-            <div className='row text-center'>  
-              <button type="button" className=" navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <div className='row'>  
+              <button type="button" className=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                   <span className="sr-only">Toggle navigation</span>
                   <span>Menu</span>
               </button>
-            </div>  
-
-            <div id="navbar" className=" navbar-collapse collapse ">
-              <ul className="nav navbar-nav text-center visible-xs" aria-expanded="false">
+            </div>
+             
+            <div id="navbar" className="navbar-collapse collapse">
+              <ul className=" nav navbar-nav text-center visible-xs" aria-expanded="false">
                 <li><Link to="/cakemenu">Cakes</Link></li>
                 <li><Link to="/pastrymenu">Pastries</Link></li>
                 <li><Link to="/breadmenu">Breads</Link></li>
@@ -30,8 +30,8 @@ var NavBar = React.createClass({
               </ul>
             </div>
 
-            <div className='row col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-6'>
-              <ul className="nav navbar-nav hidden-xs " >
+            <div className='row text-center hidden-xs'>
+              <ul className="nav navbar-nav" id='myNav'>
                   <li><Link to="/cakemenu">Cakes</Link></li>
                   <li><Link to="/pastrymenu">Pastries</Link></li>
                   <li><Link to="/breadmenu">Breads</Link></li>

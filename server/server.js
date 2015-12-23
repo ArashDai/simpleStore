@@ -25,17 +25,21 @@ app.post('/userData',function (request,response){
   response.send(console.log(request.body));
 
   var textCreator = function(data){
-  var orderText =   'Date : ' + data.body.dateTime +'\n'+
+  var orderText =   'Customer Information: '+data.body.userInfo.firstname+' '+
+                      data.body.userInfo.lastname+'\n'+
+                    'Phone Number: ' +data.body.userInfo.phonenumber+'\n'+
+                    'Email: '+data.body.userInfo.email+'\n'+  
+                    'Date: ' + data.body.dateTime +'\n'+
                     'Cake Type: ' + data.body.cakeType +'\n'+
                     'Cake Size: ' + data.body.servings +'\n'+
                     'Filling: ' + data.body.fillingType +'\n'+
                     'Frosting: ' + data.body.frostingType +'\n'+
-                    'Decoration : ' + data.body.decoration + ' ' + data.body.decorationDesc + ' ' +data.body.userInfo+'\n';
+                    'Decoration: ' + data.body.decoration + '   : ' + data.body.decorationDesc;
 
   return orderText;
   }
-  var finalText = textCreator(request)
 
+  var finalText = textCreator(request)
 
   var customerMail = {
     from: 'MayersBakery',

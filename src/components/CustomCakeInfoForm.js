@@ -30,7 +30,7 @@ var CustomCakeInfoForm = React.createClass({
         fillingType    : e.target.form[4].value,
         frostingType   : e.target.form[5].value,
         decoration     : e.target.form[6].value,
-        decorationDesc :''
+        decorationDesc :'',
       }
 
       this.props.saveValues(data);   
@@ -42,7 +42,7 @@ var CustomCakeInfoForm = React.createClass({
       return(
         <div id='card' className='container-fluid'>
 
-          <form className='col-xs-12'>
+          <form className='col-xs-12 text-center'>
             
               <label>Pickup date and time:</label> 
                     <input type='datetime-local' ref='dateTime' onChange={this.saveAndContinue}/>
@@ -80,26 +80,53 @@ var CustomCakeInfoForm = React.createClass({
               <label>Cake Type</label>
                 <select ref="cakeType" onChange={this.saveAndContinue}>
                       <option value=""></option>
+                      <option value="Half Chocolate Half Ivory Cake">Half Chocolate &Half Ivory</option>
                       <option value="Chocolate Cake">Chocolate Cake</option>
                       <option value="Classic Ivory Cake">Classic Ivory Cake</option>
                       <option value="Banana Cake">Banana Cake*</option>
                       <option value="Spice Cake">Spice Cake*</option>
                       <option value="Marble Cake">Marble Cake*</option>
                       <option value="Carrot Cake">Carrot Cake*</option>
+                      <option value="Lemon Cake">Lemon Cake*</option>
+                      <option value="Redvelvet Cake">Redvelvet Cake*</option>
+                      <option value="Chiffon Cake">Chiffon Cake*</option>
+                      <option value="Chocolate Chiffon Cake">Chocolate Chiffon Cake*</option>
+                      <option value="Cheesecake">Cheesecake*</option>
                 </select>
             
               <br></br> 
               <label>Filling</label>
                   <select ref="filling" onChange={this.saveAndContinue}>
                     <option value=""></option>
+                   
                     <option value="Chocolate Buttercream">Chocolate Buttercream</option>
                     <option value="Vanilla Buttercream">Vanilla Buttercream</option>
                     <option value="Mocha Buttercream">Mocha Buttercream</option>
-                    <option value="French Buttercream">French Buttercream</option>   
-                    <option value="Raspberry">Raspberry</option>  
+                    <option value="French Buttercream">French Buttercream</option>
+                    <option value="Vanilla Custard">Vanilla Custard</option>
+                    
+                    <option value="Raspberry Preserves">Raspberry</option>  
+                    <option value="Lemon Preserves">Lemon</option> 
+                    <option value="Pineapple Preserves">Pineapple</option>
+                  
+                     <option value="Raspberry Mousse">Raspberry</option>  
+                    <option value="Lemon Mousse">Lemon</option> 
+                    <option value="Pineapple Mousse">Pineapple</option>
+                   
                     <option value="Fresh Strawberries & Whipped Cream">Fresh Strawberries & Whipped Cream *</option>
                     <option value="Fresh Bananas & Whipped Cream">Fresh Bananas & Whipped Cream *</option>
-                    <option value="Chocolate Mousse">Chocolate Mousse *</option>    
+                    <option value="Chocolate Mousse">Chocolate Mousse *</option>  
+                    <option value="Mango Mousse">Mango Mousse *</option> 
+                    <option value="Hazelnut Mousse">Hazelnut Mousse *</option>
+                    <option value="PeanutButter Mousse">PeanutButter Mousse *</option>
+                    <option value="Passionfruit Mousse">Passionfruit Mousse *</option>
+                    <option value="Mint Chocolate Chip">Mint Chocolate Chip *</option>
+                    <option value="Toffee Crunch">Toffee Crunch *</option>
+                    <option value="Bavarian Cream">Bavarian Cream *</option>  
+                    <option value="Rum Custard">Rum Custard *</option>
+                    <option value="Grand Mariner Custard">Grand Mariner Custard *</option>
+                    <option value="German Chocolate">German Chocolate *</option> 
+                    <option value="Cream Cheese">Cream Cheese *</option> 
                   </select>
             
 
@@ -111,8 +138,12 @@ var CustomCakeInfoForm = React.createClass({
                     <option value="Vanilla Buttercream">Vanilla Buttercream</option>
                     <option value="Mocha Buttercream">Mocha Buttercream</option>
                     <option value="French Buttercream">French Buttercream</option> 
-                    <option value="Chocolate Mousse">Chocolate Mousse*</option>
-                    <option value="Whipped Cream">Whipped Cream*</option>
+                    <option value="Chocolate Mousse">Chocolate Mousse *</option>
+                    <option value="Whipped Cream">Whipped Cream *</option>
+                    <option value="Cream Cheese">Cream Cheese *</option>
+                    <option value="Marzipan">Marzipan *</option>
+                    <option value="White Chocolate Ganache">White Chocolate Ganache *</option>
+                    <option value="Dark Chocolate Ganache">White Chocolate Ganache *</option>
                   </select>
 
             <br></br> 
@@ -127,10 +158,10 @@ var CustomCakeInfoForm = React.createClass({
                       <option value="Custom Design">Other Custom Design</option>
                   </select>
               
-            <br></br>     
+            <br></br>
             
             <Link to='/CustomCakeDescriptionForm'>
-              <button>Save and Continue</button>
+              <button className='text-center col-sm-offset-8'>Save and Continue</button>
             </Link>
             
           </form>

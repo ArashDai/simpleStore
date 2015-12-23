@@ -8,7 +8,7 @@ var BakedIntro = React.createClass({
       <div id="Intros" className='container-fluid'>
        
         <div className='row'>      
-          <p id='cakeTitle' className = 'text-center'>Pastries</p>
+          <h2 id='cakeTitle' className = 'text-center'>Pastries</h2>
            <Link to="/PastryMenu">
              <p id='pastryButton' className="btn btn-default hidden-xs hidden-sm col-md-offset-8" href="#" role="button">Pastry Menu</p>
             </Link>
@@ -21,21 +21,28 @@ var BakedIntro = React.createClass({
         
 
         <div className="hidden-xs ">
-            <div className='row col-sm-offset-2 col-md-offset-2'>
+            <div className='row col-sm-offset-2 col-md-offset-3'>
                 <img id="cakeImg" className="img-circle col-sm-5 col-md-2" src="/assets/sqcake1.jpg"/>
                 <img id="cakeImg" className="img-circle col-sm-5 col-md-2" src="/assets/sqcake2.jpg"/>
                 <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
                 <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
-                <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
+                
             </div>
             
-            <div className='row col-sm-offset-2 col-md-offset-2'>
+            <div className='row col-sm-offset-2 col-md-offset-3'>
                 <img id="cakeImg" className="img-circle col-sm-5 col-md-2" src="/assets/sqcake1.jpg"/>
                 <img id="cakeImg" className="img-circle col-sm-5 col-md-2" src="/assets/sqcake2.jpg"/>
                 <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
                 <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
-                <img id="cakeImg" className="img-circle col-md-2 hidden-sm" src="/assets/sqcake3.jpg"/>
+                
               
+            </div>
+
+            <div className='row col-md-offset-3 visible-lg'>
+              <img id="cakeImg" className="img-circle col-md-2" src="/assets/sqcake1.jpg"/>
+              <img id="cakeImg" className="img-circle col-md-2" src="/assets/sqcake2.jpg"/>
+              <img id="cakeImg" className="img-circle col-md-2" src="/assets/sqcake3.jpg"/>
+              <img id="cakeImg" className="img-circle col-md-2" src="/assets/sqcake3.jpg"/>
             </div>
 
          </div>

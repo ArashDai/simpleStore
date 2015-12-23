@@ -6,19 +6,9 @@ var Cakes = React.createClass({
     return(
       <div id="card" className="container-fluid ">
             
-        
-
-        <div>
-
-          <div id="cakeBlurb" className="col-xs-12 col-sm-10 col-sm-offset-1 ">
-            <p className='text-center'>
-            Here at Mayers Bakery we offer a wide variety of cakes for all occasions, from weddings and anniversaries to birthdays
-             <br/> 
-             To see our avalible in store tortes as well as customised cakes click the link above. 
+            <p className='text-center' id="font">
+            Here at Mayers Bakery we offer a wide variety of cakes for all occasions,<br/> from weddings and anniversaries to birthdays
             </p>
-          </div>
-
-        </div>
         
       </div>
 
