@@ -12,6 +12,9 @@ var EventIntro = require('./EventIntro');
 
 var MainBody = React.createClass({
   render:function(){
+
+    window.scrollTo(0, 0);
+
     return(
     <div>
       <div className='col-md-offset-1 col-md-10'>

@@ -3,6 +3,8 @@ var React =  require('react');
 
 var LunchMenu = React.createClass({
   render:function(){
+    window.scrollTo(0, 0);
+    
     return(
       <div id='card' className='container-fluid'>
         <div className="col-xs-12">

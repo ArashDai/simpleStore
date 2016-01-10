@@ -4,7 +4,6 @@ var Link = require('react-router').Link;
 var BakedIntro = React.createClass({
   render:function(){
     return(
-
       <div id="Intros" className='container-fluid'>
        
         <div className='row'>      

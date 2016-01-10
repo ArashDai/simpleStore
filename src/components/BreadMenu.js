@@ -3,6 +3,8 @@ var React =  require('react');
 
 var BreadMenu = React.createClass({
   render:function(){
+    window.scrollTo(0, 0);
+    
     return(
       <div id='card' className='container-fluid'>
         <h1 className='text-center'>Bread Menu</h1>

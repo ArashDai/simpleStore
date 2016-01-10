@@ -3,6 +3,8 @@ var React =  require('react');
 
 var PastryMenu = React.createClass({
   render:function(){
+    window.scrollTo(0, 0);
+    
     return(
       <div>
         

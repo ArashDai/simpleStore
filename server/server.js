@@ -55,18 +55,19 @@ app.post('/userData',function (request,response){
     text: finalText
   };
 
-  transporter.sendMail(customerMail, function(error, info){
-    if(error){
-        return console.log(error);
-    }
-    console.log('Message sent: ' + info.response);
-  });
-
   transporter.sendMail(buisnessMail, function(error, info){
     if(error){
         return console.log(error);
     }
-    console.log('Message sent: ' + info.response);
+    console.log('Buisness Message sent: ' + info.response);
+
+    transporter.sendMail(customerMail, function(error, info){
+      if(error){
+          return console.log(error);
+      }
+      console.log('Customer Message Sent: ' + info.response);
+
+    });
   });
 
 

@@ -1,4 +1,6 @@
 var React = require('react');
+var Link = require('react-router').Link;
+
 var WeddingImgs = require('./WeddingGalleryImages');
 var BakedImgs = require('./BakedGalleryImages');
 var CakeImgs = require('./CakeGalleryImages');
@@ -9,13 +11,25 @@ var Gallery = React.createClass({
     return(
       <div>
     
-          <WeddingImgs/>
-          
-          <BakedImgs/>
-          
-          <CakeImgs/>
-          
-          <FoodImgs/>
+        <h2>Gallery</h2>
+
+        <div class="navbar">
+          <a class="navbar-brand" href="#">Title</a>
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+
+
+
 
       </div>
       )}
@@ -23,14 +37,3 @@ var Gallery = React.createClass({
 
 
 module.exports = Gallery;
-
-
-
-
-          // <WeddingImgs/>
-          
-          // <BakedImgs/>
-          
-          // <CakeImgs/>
-          
-          // <FoodImgs/>
